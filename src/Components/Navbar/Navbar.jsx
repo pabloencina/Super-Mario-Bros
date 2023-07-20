@@ -7,17 +7,17 @@ function NavbarComponent() {
   return (
     <Navbar collapseOnSelect expand="lg" className="navbar__component">
       <Container>
-        <Navbar.Brand href="#home" className="navbar__color">
+        <Navbar.Brand href="/" className="navbar__color">
           <img src={logo} alt="logo-mario" className="navbar__logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features" className="navbar__color">
-              Features
+            <Nav.Link href="/mi-historia" className="navbar__color">
+              Mi Historia
             </Nav.Link>
-            <Nav.Link href="#pricing" className="navbar__color">
-              Pricing
+            <Nav.Link href="/personajes" className="navbar__color">
+              Personajes
             </Nav.Link>
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -32,11 +32,11 @@ function NavbarComponent() {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            <Nav.Link href="#deets" className="navbar__color">
-              More deets
+            <Nav.Link href="/videos" className="navbar__color">
+              Videos
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" className="navbar__color">
-              Dank memes
+            <Nav.Link eventKey={2} href="/juegos" className="navbar__color">
+              Juegos
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

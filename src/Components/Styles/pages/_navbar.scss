@@ -1,10 +1,13 @@
 .navbar{
     &__component{
-        background-color: $colorRojo;
+        background-color: $colorFondoNavbar;
         height: 100px;
     }
     &__color{
-        color: $colorFondo;
+        color: $colorRojo;
+        font-family: 'VT323', monospace;
+        font-size: 32px;
+        font-weight: 400;
     }
     &__logo{
         height: 100px;
@@ -20,7 +23,10 @@
             height: 85px;
         }
         &__color{
-            color: $colorFondo;
+            color: $colorCeleste;
+            font-family: 'VT323', monospace;
+            font-size: 20px;
+            font-weight: 400;
         }
         &__logo{
             height: 55px;
