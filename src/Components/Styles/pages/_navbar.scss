@@ -1,0 +1,30 @@
+.navbar{
+    &__component{
+        background-color: $colorRojo;
+        height: 100px;
+    }
+    &__color{
+        color: $colorFondo;
+    }
+    &__logo{
+        height: 100px;
+        background: transparent;
+        background-color: $colorRojo;
+    }
+}
+
+@media screen and (max-width:500px){
+    .navbar{
+        &__component{
+            background-color: $colorVerde;
+            height: 85px;
+        }
+        &__color{
+            color: $colorFondo;
+        }
+        &__logo{
+            height: 55px;
+            background: transparent;
+        }
+    }
+}
