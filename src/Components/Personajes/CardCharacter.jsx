@@ -13,13 +13,7 @@ const CardCharacters = ({ character }) => {
         />
       </div>
 
-      <Card.Body
-        className="card h-100"
-        style={{
-          border: "none",
-          boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
-        }}
-      >
+      <Card.Body>
         <div className="charactersCard__container_title">
           <p className="charactersCard__title">{character.name}</p>
         </div>
