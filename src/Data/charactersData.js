@@ -52,7 +52,7 @@ const charactersData = [
     name: "Browser",
     description:
       "Es el principal antagonista de la serie y el archienemigo de Mario. Bowser es un gran Koopa que tiene la habilidad de lanzar fuego y secuestra a la Princesa Peach con frecuencia. Es conocido por ser malvado, astuto y obstinado, pero también tiene momentos cómicos.",
-    image: { Browser },
+    image: Browser,
   },
   {
     id: 5,
@@ -152,20 +152,20 @@ const charactersData = [
       " Son versiones voladoras de los Koopa Troopas. Tienen alas y pueden volar en el aire.",
     image: KoopaParatroopas,
   },
-  {
-    id: 19,
-    name: "Shy Guy.........................",
-    description:
-      "Son personajes con máscaras y vestimenta colorida. Vienen en diferentes variedades y a menudo son enemigos, aunque algunos también pueden ser aliados.",
-    image: "",
-  },
-  {
-    id: 20,
-    name: "Boo............",
-    description:
-      "Son fantasmas tímidos que se vuelven invisibles cuando Mario los mira directamente. Aparecen en niveles espeluznantes y suelen perseguir a Mario.",
-    image: "",
-  },
+  // {
+  //   id: 19,
+  //   name: "Shy Guy.........................",
+  //   description:
+  //     "Son personajes con máscaras y vestimenta colorida. Vienen en diferentes variedades y a menudo son enemigos, aunque algunos también pueden ser aliados.",
+  //   image: "",
+  // },
+  // {
+  //   id: 20,
+  //   name: "Boo............",
+  //   description:
+  //     "Son fantasmas tímidos que se vuelven invisibles cuando Mario los mira directamente. Aparecen en niveles espeluznantes y suelen perseguir a Mario.",
+  //   image: "",
+  // },
   {
     id: 21,
     name: "Bullet Bill",

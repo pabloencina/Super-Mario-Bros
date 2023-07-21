@@ -1,15 +1,13 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-import charactersData from "../../Data/charactersData";
 import cajaDePregunta from "../../Images/signo-de-pregunta.png";
 
-const CardCharacters = () => {
-  console.log(charactersData[0].name);
+const CardCharacters = ({ character }) => {
   return (
     <Card className="charactersCard__container_card">
       <div className="charactersCard__container_image">
         <img
-          src={charactersData[0].image}
+          src={character.image}
           alt="menu"
           className="charactersCard__image"
         />
@@ -23,12 +21,10 @@ const CardCharacters = () => {
         }}
       >
         <div className="charactersCard__container_title">
-          <p className="charactersCard__title">{charactersData[0].name}</p>
+          <p className="charactersCard__title">{character.name}</p>
         </div>
         <div className="charactersCard__container_description">
-          <p className="charactersCard__description">
-            {charactersData[0].description}
-          </p>
+          <p className="charactersCard__description">{character.description}</p>
         </div>
         <div className="charactersCard__container_button">
           <Button
