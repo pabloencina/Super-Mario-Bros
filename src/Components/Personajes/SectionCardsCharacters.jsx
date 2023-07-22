@@ -8,7 +8,7 @@ const SectionCardsCharacters = () => {
   return (
     <div className="presentation">
       <div className="presentation__container_image">
-        <img src={MarioName} alt="MarioImage" />
+        <img src={MarioName} alt="MarioImage" className="image-animation" />
       </div>
 
       <div className="presentation__container_text">

@@ -2,9 +2,9 @@
   
     &__container_card{
         width: 350px;
-        border: 5px solid $colorAmarillo;
+        border: 5px solid $colorCeleste;
         border-radius: 120px 50px ;
-        box-shadow: 0 0 10px 5px $colorAmarillo;
+        box-shadow: 0 0 10px 5px $colorCeleste;
     }
     &__container_title{
         height: 130px;
@@ -12,13 +12,18 @@
         justify-content: center;
         align-items: center;
         border: 5px solid $colorVerde;
+        background-color: $colorVerde;
         border-radius: 70px 10px ;
     }
     &__title{
         font-family: 'VT323', monospace;
         font-size: 50px;
         font-weight: 500;
-        color: $colorVerde;
+        color: $colorFondo;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__container_description{
         height: 280px;
@@ -78,3 +83,31 @@
         margin: 50px;
     }
 }
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .image-animation {
+    animation: slideInRight 1s ease;
+  }
+  
+
+  @keyframes rotate {
+    from {
+      transform: rotate(1deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .charactersCard__button_image {
+    animation: rotate 3s linear infinite; /* La animación se repite infinitamente */
+  }
+  
