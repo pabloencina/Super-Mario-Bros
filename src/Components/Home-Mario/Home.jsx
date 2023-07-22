@@ -1,7 +1,9 @@
 import React from "react";
 import sonicBlue from "../../Images/sonic-blue.png";
 import signoPregunta from "../../Images/signo-de-pregunta.png";
-import { Button, Col, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import CarouselComponent from "../Carousel/Carousel";
 
 const Home = () => {
   const userName = "Sonic-blue";
@@ -29,7 +31,9 @@ const Home = () => {
               </p>
             </div>
             <div className="home__container_button">
-              <Button className="home__button">Personajes</Button>{" "}
+              <Link to="/personajes">
+                <Button className="home__button">Personajes</Button>
+              </Link>{" "}
             </div>
           </Col>
         </Row>
@@ -99,6 +103,12 @@ const Home = () => {
           )}
         </Row>
       </div>
+      <div className="carousel__container_title">
+        <p className="carousel__title">Fotos para compartir con mis amigos</p>
+      </div>
+      <Container>
+        <CarouselComponent />
+      </Container>
     </div>
   );
 };
