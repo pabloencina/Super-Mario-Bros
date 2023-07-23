@@ -1,11 +1,11 @@
 .navbar{
     &__component{
-        background-color: $colorRojo;
+        background-color: $colorRed;
         height: 100px;
     }
     &__color{
-        color: $colorFondo;
-        font-family: 'VT323', monospace;
+        color: $colorWhite;
+        font-family: $fontFamilyVt323;
         font-size: 32px;
         font-weight: 400;
     }
@@ -17,12 +17,12 @@
 @media screen and (max-width:500px){
     .navbar{
         &__component{
-            background-color: $colorVerde;
+            background-color: $colorGreen;
             height: 85px;
         }
         &__color{
-            color: $colorCeleste;
-            font-family: 'VT323', monospace;
+            color: $colorSkyBlue;
+            font-family:  $fontFamilyVt323;
             font-size: 20px;
             font-weight: 400;
         }
