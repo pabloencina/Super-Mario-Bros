@@ -11,13 +11,13 @@ const Home = () => {
   const userAge = 40;
   const marioFanatic = true;
   return (
-    <div className="home">
+    <Container className="home">
       <div className="home__container_title">
         <h2 className="home__title">¡Hola amigos!</h2>
       </div>
       <div className="home__container_universal">
         <Row className="home__container_image">
-          <Col md={6}>
+          <Col md={6} sm={12}>
             <img className="home__image" src={sonicBlue} alt="sonic" />
             <div className="container">
               <p className="home__text_pregunta">
@@ -41,7 +41,7 @@ const Home = () => {
         {/* Columna para el texto */}
 
         <Row className="home__container">
-          <div className="home__container_text">
+          <div className="home__container_text" sm={12}>
             <p className="home__text">
               Mi nombre es <span className="home__span_azul">{userName}</span>,
               y vivo en {""}
@@ -103,13 +103,13 @@ const Home = () => {
           )}
         </Row>
       </div>
-      <div className="carousel__container_title">
-        <p className="carousel__title">Fotos para compartir con mis amigos</p>
-      </div>
       <Container>
+        <div className="carousel__container_title">
+          <p className="carousel__title">Fotos para compartir con mis amigos</p>
+        </div>
         <CarouselComponent />
       </Container>
-    </div>
+    </Container>
   );
 };
 

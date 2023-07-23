@@ -12,10 +12,6 @@ const CarouselComponent = () => {
           src={ImageCarousel1}
           alt="First slide"
         />
-        <CarouselComponents.Caption>
-          {/* <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </CarouselComponents.Caption>
       </CarouselComponents.Item>
       <CarouselComponents.Item className="carousel__container_image">
         <img
@@ -23,11 +19,6 @@ const CarouselComponent = () => {
           src={ImageCarousel2}
           alt="Second slide"
         />
-
-        <CarouselComponents.Caption>
-          {/* <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </CarouselComponents.Caption>
       </CarouselComponents.Item>
       <CarouselComponents.Item className="carousel__container_image">
         <img
@@ -35,13 +26,6 @@ const CarouselComponent = () => {
           src={ImageCarousel1}
           alt="Third slide"
         />
-
-        <CarouselComponents.Caption>
-          {/* <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        </CarouselComponents.Caption>
       </CarouselComponents.Item>
     </CarouselComponents>
   );

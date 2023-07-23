@@ -1,12 +1,12 @@
 import React from "react";
 import MarioName from "../../Images/mario-name.png";
 import charactersData from "../../Data/charactersData";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import CardCharacters from "./CardCharacter";
 
 const SectionCardsCharacters = () => {
   return (
-    <div className="presentation">
+    <Container className="presentation">
       <div className="presentation__container_image">
         <img src={MarioName} alt="MarioImage" className="image-animation" />
       </div>
@@ -28,7 +28,7 @@ const SectionCardsCharacters = () => {
           })}
         </Row>
       </div>
-    </div>
+    </Container>
   );
 };
 
