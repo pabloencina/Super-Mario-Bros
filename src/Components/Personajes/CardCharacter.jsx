@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 import cajaDePregunta from "../../Images/signo-de-pregunta.png";
+import { Link } from "react-router-dom";
 
 const CardCharacters = ({ character }) => {
   return (
@@ -28,11 +29,13 @@ const CardCharacters = ({ character }) => {
               border: "none",
             }}
           >
-            <img
-              src={cajaDePregunta}
-              alt="caja"
-              className="charactersCard__button_image"
-            />
+            <Link to={`/detalle/${character.id}`}>
+              <img
+                src={cajaDePregunta}
+                alt="caja"
+                className="charactersCard__button_image"
+              />
+            </Link>
           </Button>
         </div>
       </Card.Body>

@@ -5,6 +5,8 @@ import "../src/Styles/App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home-Mario/Home";
 import SectionCardsCharacters from "./Components/Personajes/SectionCardsCharacters";
+import CardById from "./Components/Personajes/CardById";
+import charactersData from "./Data/charactersData";
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/personajes" element={<SectionCardsCharacters />} />
+        <Route
+          path="/detalle/:id"
+          element={<CardById charactersData={charactersData} />}
+        />
       </Routes>
     </BrowserRouter>
   );

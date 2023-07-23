@@ -84,6 +84,79 @@
     }
 }
 
+.detailCardById{
+    &__container{
+        display: flex;
+        height: auto;
+        width: 80%;
+    }
+    &__container_image{
+        flex: 0 0 60%;   
+        display: flex;
+        justify-content: center;
+    }
+    &__image{
+        height: 500px;
+    }
+    &__content{
+        flex: 0 0 40%; /* El contenido ocupará el 50% del ancho */
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__container_name{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color:  $colorVerde;
+    }
+    &__name{
+        font-family: 'VT323', monospace;
+        font-size: 50px;
+        font-weight: 500;
+        color: $colorFondo;
+    }
+    &__container_description{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__description{
+        font-family: monospace;
+        font-size: 16px;
+    }
+    &__container_link{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link{
+        font-family: 'VT323', monospace;
+        font-size: 30px;
+        font-weight: 500;
+        color: $colorFondo;
+        text-decoration: none;
+    }
+    &__button{
+        background-color: $colorVerde;
+        border: none;
+    }
+    &__container_card{
+        background-color: $colorAzul;
+        height: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @keyframes slideInRight {
     from {
       transform: translateX(-100%);
