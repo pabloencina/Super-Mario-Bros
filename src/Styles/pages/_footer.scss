@@ -1,0 +1,53 @@
+.footer{
+    &__container_general{
+            background-color: $colorGreen;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+    }
+    &__container_image{
+            width: 100px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+    }
+    &__image{
+            width: 100px;
+            position: relative;
+            left: 0;
+            animation: slideAnimation 2s linear infinite;
+    }
+    &__container_name{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    &__name{
+        font-family: $fontFamilyVt323;
+        color: $colorWhite;
+        font-size: 60px;
+    }
+}
+@keyframes slideAnimation {
+    0% { left: 0; } /* La imagen empieza en la posición izquierda */
+    100% { left: calc(100% - 200px); } /* La imagen termina en la posición derecha */
+  }
+
+@media screen and (max-width:412px){
+    footer{
+        &__container_general{
+                background-color: $colorGreen;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+        }
+        &__container_image{
+                width: 100px;
+                display: flex;
+                align-items: center;
+        }
+        &__image{
+                width: 100px;
+        }
+    }
+}

@@ -15,10 +15,14 @@ const Home = () => {
       <div className="home__container_title">
         <h2 className="home__title">¡Hola amigos!</h2>
       </div>
+
       <div className="home__container_universal">
         <Row className="home__container_image">
           <Col md={6} sm={12}>
-            <img className="home__image" src={sonicBlue} alt="sonic" />
+            <Container className="home__container_image_sonic">
+              <img className="home__image" src={sonicBlue} alt="sonic" />
+            </Container>
+
             <div className="container">
               <p className="home__text_pregunta">
                 Quieren ver a todos mis amigos que pertenecen al mundo de{" "}
@@ -40,7 +44,7 @@ const Home = () => {
 
         {/* Columna para el texto */}
 
-        <Row className="home__container">
+        <Row className="home__container_dialog">
           <div className="home__container_text" sm={12}>
             <p className="home__text">
               Mi nombre es <span className="home__span_azul">{userName}</span>,

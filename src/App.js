@@ -8,6 +8,7 @@ import SectionCardsCharacters from "./Components/Personajes/SectionCardsCharacte
 import CardById from "./Components/Personajes/CardById";
 import charactersData from "./Data/charactersData";
 import MyStory from "./Components/Mi-Historia/MyStory";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         />
         <Route path="/mi-historia" element={<MyStory />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
