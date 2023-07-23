@@ -1,0 +1,48 @@
+.myStory{
+    &__container_section{
+        background-color: $colorBlue;
+    }
+    &__container_title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    &__title{
+        font-family: $fontFamilyVt323;
+        font-size: 60px;
+        color: $colorWhite;
+    }
+    &__container_paragraph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__paragraph{
+        font-family: $fontFamilyMonospace;
+        line-height: 2.5;
+        font-size: 20px;
+        font-weight: 400;
+        color: $colorWhite;
+    }
+    &__span_image_title{
+        width: 150px;
+        transform: translateX(-50%);
+        animation: jumpAnimation 1s infinite;
+    }
+    &__span_image_paragraph{
+        width: 30px;
+        position: relative;
+        transform: translateX(-50%);
+        animation: jumpAnimation 2s infinite;
+    }
+    &__span_container{
+        position: absolute;
+    }
+    @keyframes jumpAnimation {
+        0% { transform: translateX(-50%) translateY(0); }
+        30% { transform: translateX(-50%) translateY(-10px); }
+        50% { transform: translateX(-50%) translateY(-10px); }
+      }
+}

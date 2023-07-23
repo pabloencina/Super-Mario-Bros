@@ -106,7 +106,7 @@
         
     }
     &__container_name{
-        width: auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -276,26 +276,31 @@
     
     .detailCardById{
         &__container{
-            display: flex;
-            height: auto;
-            width: 80%;
+            //display: flex;
+            //height: auto;
+            width: 100%;
+            //transition: transform 0.5s ease;
         }
         &__container_image{
-            flex: 0 0 60%;   
+            //flex: 0 0 60%;   
+            width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
+            background-color: aqua;
         }
         &__image{
-            height: 500px;
+            height: 200px;
+            width: 100%;
         }
         &__content{
-            flex: 0 0 40%; /* El contenido ocupará el 50% del ancho */
+            //flex: 0 0 40%; /* El contenido ocupará el 50% del ancho */
             display: flex;
-            flex-direction: column;
+            //flex-direction: row;
             
         }
         &__container_name{
-            width: auto;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -309,11 +314,12 @@
             color: $colorWhite;
         }
         &__container_description{
-            width: 90%;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+            height: auto;
+            //display: flex;
+            //justify-content: center;
+            //align-items: center;
+            background-color: red;
             
         }
         &__description{

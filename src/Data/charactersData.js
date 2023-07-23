@@ -49,7 +49,7 @@ const charactersData = [
   },
   {
     id: 4,
-    name: "Browser",
+    name: "Bowser",
     description:
       "Es el principal antagonista de la serie y el archienemigo de Mario. Bowser es un gran Koopa que tiene la habilidad de lanzar fuego y secuestra a la Princesa Peach con frecuencia. Es conocido por ser malvado, astuto y obstinado, pero también tiene momentos cómicos.",
     image: Browser,

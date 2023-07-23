@@ -7,6 +7,7 @@ import Home from "./Components/Home-Mario/Home";
 import SectionCardsCharacters from "./Components/Personajes/SectionCardsCharacters";
 import CardById from "./Components/Personajes/CardById";
 import charactersData from "./Data/charactersData";
+import MyStory from "./Components/Mi-Historia/MyStory";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           path="/detalle/:id"
           element={<CardById charactersData={charactersData} />}
         />
+        <Route path="/mi-historia" element={<MyStory />} />
       </Routes>
     </BrowserRouter>
   );
