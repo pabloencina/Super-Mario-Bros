@@ -35,7 +35,7 @@ const MyStory = () => {
           </p>
         </div>
       </Container>
-      <Row>
+      <Row className="myStory__container_row">
         <Col className="myStory__container_image">
           <img src={Mushroom} alt="Mushroom" className="myStory__image" />
         </Col>
@@ -87,7 +87,7 @@ const MyStory = () => {
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row className="myStory__container_row">
         <Col className="myStory__container_paragraph">
           <p className="myStory__paragraph">
             En medio del caos, un valiente fontanero llamado Mario{" "}
@@ -131,7 +131,7 @@ const MyStory = () => {
           <img src={Characters} alt="Characters" className="myStory__image" />
         </Col>
       </Row>
-      <Row>
+      <Row className="myStory__container_row">
         <Col className="myStory__container_image">
           <img src={Villains} alt="Villains" className="myStory__image" />
         </Col>
@@ -183,7 +183,7 @@ const MyStory = () => {
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row className="myStory__container_row">
         <Col className="myStory__container_paragraph">
           <p className="myStory__paragraph">
             A lo largo de los años, la saga de Mario Bros ha evolucionado y se
@@ -220,7 +220,7 @@ const MyStory = () => {
           <img src={Toad} alt="Toad" className="myStory__image" />
         </Col>
       </Row>
-      <Row>
+      <Row className="myStory__container_row">
         <Col className="myStory__container_image">
           <img src={JustRescued} alt="JustRescued" className="myStory__image" />
         </Col>
@@ -257,7 +257,7 @@ const MyStory = () => {
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row className="myStory__container_row">
         <Col className="myStory__container_paragraph">
           <p className="myStory__paragraph">
             La historia de Mario Bros{" "}

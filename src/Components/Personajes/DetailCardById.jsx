@@ -15,7 +15,7 @@ const DetailCardById = ({ charactersData }) => {
 
   return (
     <Card className="detailCardById__container">
-      <Row sm={12}>
+      <Row sm={12} className="detailCardById__container_row">
         <Col md={6} sm={12} className="detailCardById__container_image">
           <img src={image} alt="menu" className="detailCardById__image" />
         </Col>
