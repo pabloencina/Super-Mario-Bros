@@ -18,7 +18,12 @@
         width: 100%;
         height: auto; 
     }
-    
+    &__container_dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
     &__container_title{
         display: flex;
@@ -35,7 +40,7 @@
     }
     &__container_text{
         background-color: $colorWhite;
-        //width: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -1,0 +1,40 @@
+.videos{
+    &__youtube{
+        width: 350px;
+       //height: 600px;
+    }
+    &__container_youtube{
+        width: 350px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__container_letters{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__letters{
+        font-family: $fontFamilyVt323;
+        font-size: 60px;
+        color: $colorBlack;
+    }
+    
+}
+
+.videoById{
+    &__container_title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+    }
+    &__title{
+        font-family: $fontFamilyVt323;
+        color: $colorWhite;
+        font-size: 40px;
+    }
+}
