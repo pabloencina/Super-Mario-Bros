@@ -16,11 +16,11 @@ const CardCharacters = ({ character }) => {
 
       <Card.Body>
         <div className="charactersCard__container_title">
-          <p className="charactersCard__title">{character.name}</p>
+          <p className="charactersCard__title">
+            {character.name.toUpperCase()}
+          </p>
         </div>
-        {/* <div className="charactersCard__container_description">
-          <p className="charactersCard__description">{character.description}</p>
-        </div> */}
+
         <div className="charactersCard__container_button">
           <Button
             style={{

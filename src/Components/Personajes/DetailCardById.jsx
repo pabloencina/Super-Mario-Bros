@@ -23,10 +23,12 @@ const DetailCardById = ({ charactersData }) => {
         <div className="detailCardById__content">
           <div md={6}>
             <div className="detailCardById__container_name">
-              <p className="detailCardById__name">{name}</p>
+              <p className="detailCardById__name">{name.toUpperCase()}</p>
             </div>
             <div className="detailCardById__container_description">
-              <p className="detailCardById__description">{description}</p>
+              <p className="detailCardById__description">
+                {description.toUpperCase()}
+              </p>
             </div>
             <div className="detailCardById__container_link">
               <div>
