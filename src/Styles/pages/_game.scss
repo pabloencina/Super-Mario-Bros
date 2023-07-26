@@ -40,4 +40,14 @@
         //font-weight: 500;
         color: $colorRed;
     }
+    &__container_image_questionBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image_questionBox{
+        width: 100%;
+        height: 100%;
+    }
 }

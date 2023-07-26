@@ -1,22 +1,17 @@
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-//import { useParams } from "react-router-dom";
 
-const GameImageById = ({ charactersData }) => {
-  // const { id } = useParams();
-
-  // const cardImage = charactersData.find((char) => char.id === parseInt(id));
-
-  // if (!cardImage) {
-  //   return <div>No se encontró la tarjeta</div>;
-  // }
-
-  const { name, image } = charactersData;
+const CardGameImage = ({ charactersData, handleCardClick }) => {
+  const { name, image, id } = charactersData;
   console.log(name);
   return (
     <Container className="game__container">
-      <Button className="game__button_card">
-        <Card className="game__card_container">
+      <Button className="game__button_card" key={id}>
+        <Card
+          className="game__card_container"
+          key={id}
+          onClick={handleCardClick}
+        >
           <Row sm={12} className="">
             <Col md={6} sm={12} className="game__container_image">
               <img src={image} alt="menu" className="game__image" />
@@ -36,4 +31,4 @@ const GameImageById = ({ charactersData }) => {
   );
 };
 
-export default GameImageById;
+export default CardGameImage;

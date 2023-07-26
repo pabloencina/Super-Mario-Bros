@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import charactersData from "../../Data/charactersData";
-import GameImageById from "./GameImageById";
+import CardContainer from "./CardContainer";
 
 const CardGameById = () => {
   return (
@@ -10,7 +10,7 @@ const CardGameById = () => {
         {charactersData.map((card) => {
           return (
             <Col key={card.id} md={4} className="">
-              <GameImageById key={card.id} charactersData={card} />
+              <CardContainer key={card.id} charactersData={card} />
             </Col>
           );
         })}
