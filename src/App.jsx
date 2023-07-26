@@ -10,6 +10,7 @@ import charactersData from "./Data/charactersData";
 import MyStory from "./Components/Mi-Historia/MyStory";
 import Footer from "./Components/Footer/Footer";
 import VideoById from "./Components/Videos-Mario/VideoById";
+import CardGameById from "./Components/Juegos/CardGameById";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         />
         <Route path="/mi-historia" element={<MyStory />} />
         <Route path="/videos" element={<VideoById />} />
+        <Route path="/juegos" element={<CardGameById />} />
       </Routes>
       <Footer />
     </BrowserRouter>

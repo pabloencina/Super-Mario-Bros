@@ -1,0 +1,43 @@
+.game{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button_card{
+        background-color: transparent;
+        border: none;
+        &:hover{
+            background-color: $colorGreen;
+        }
+    }
+    &__card_container{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__container_image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__image{
+        width: 240px;
+        height: 255px;
+    }
+    &__container_name{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__name{
+        font-family: $fontFamilyVt323;
+        font-size: 20px;
+        //font-weight: 500;
+        color: $colorRed;
+    }
+}
