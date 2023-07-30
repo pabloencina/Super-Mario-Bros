@@ -2,28 +2,20 @@ import { useState } from "react";
 import { Button, Card, Container } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import Mario from "../../Images/mario-logo.png";
+import luma from "../../Images/Images-Characters-Mario/Luma-character.png";
 
 const VideoCard = ({ video }) => {
   const [showLetter, setShowLetter] = useState(false);
-  //const [randomWordIndex, setRandomWordIndex] = useState(0);
 
   const handleCardClick = () => {
     setShowLetter(!showLetter);
-    // if (!showLetter) {
-    //   const randomText = Math.floor(Math.random() * videosData.length);
-    //   setRandomWordIndex(randomText);
-    // }
   };
-  //console.log(videosData[randomWordIndex].text);
-  //const randomText = Math.floor(Math.random() * videosData.length);
-  //console.log(randomText);
-  //const randomWord = videosData[randomText];
-  //console.log(randomWord.text);
 
   return (
-    <Card className="videos__container_youtube">
+    <Card className="videos__container_youTube">
       {!showLetter ? (
         <Button
+          className="videos__container_btn"
           onClick={handleCardClick}
           style={{ backgroundColor: "transparent", border: "none" }}
         >
@@ -55,15 +47,22 @@ const VideoCard = ({ video }) => {
         </Button>
       )}
       <ReactPlayer
-        className="videos__youtube"
+        className="videos__youTube"
         url={video.id_video}
-        width="500px"
+        width="390px"
         height="auto"
       >
         {video.id_video}
       </ReactPlayer>
       <Container className="videoName__container">
-        <p className="videoName__name">{video.name}</p>
+        <p className="videoName__name">
+          {video.name}
+
+          <span>
+            {""}
+            <img className="videoName__image_luma" src={luma} alt="Luma" />
+          </span>
+        </p>
       </Container>
     </Card>
   );
