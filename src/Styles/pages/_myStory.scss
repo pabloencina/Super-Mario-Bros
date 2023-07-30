@@ -13,6 +13,7 @@
         font-family: $fontFamilyVt323;
         font-size: 60px;
         color: $colorWhite;
+        text-transform: uppercase;
     }
     &__container_paragraph{
         display: flex;
@@ -25,6 +26,7 @@
         font-size: 20px;
         font-weight: 400;
         color: $colorWhite;
+        text-transform: uppercase;
     }
     &__span_image_title{
         width: 150px;
@@ -65,6 +67,7 @@
             font-family: $fontFamilyVt323;
             font-size: 30px;
             color: $colorWhite;
+            text-transform: uppercase;
         }
         &__container_row{
             flex-direction: column;
@@ -88,6 +91,7 @@
             font-size: 16px;
             font-weight: 400;
             color: $colorWhite;
+            text-transform: uppercase;
         }
         &__span_image_title{
             width: 70px;

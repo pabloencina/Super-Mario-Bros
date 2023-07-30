@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 import CarouselComponent from "../Carousel/Carousel";
 
 const Home = () => {
-  const userName = "Sonic-blue";
-  const userLocation = "Plaza Huincul";
+  const userName = "SONIC-BLUE";
+  const userLocation = "PLAZA HUINCUL";
   const userAge = 40;
   const marioFanatic = true;
   return (
     <Container className="home">
       <div className="home__container_title">
-        <h2 className="home__title">¡Hola amigos!</h2>
+        <h2 className="home__title">¡¡¡HOLA AMIGUITO!!!</h2>
       </div>
 
       <div className="home__container_universal">

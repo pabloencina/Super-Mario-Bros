@@ -21,18 +21,18 @@ function NavbarComponent() {
           >
             <Nav className="me-auto" style={{ marginLeft: "20px" }}>
               <Nav.Link href="/mi-historia" className="navbar__color">
-                Mi Historia
+                MI HISTORIA
               </Nav.Link>
               <Nav.Link href="/personajes" className="navbar__color">
-                Personajes
+                PERSONAJES
               </Nav.Link>
             </Nav>
             <Nav style={{ marginLeft: "20px" }}>
               <Nav.Link href="/videos" className="navbar__color">
-                Videos
+                VIDEOS
               </Nav.Link>
               <Nav.Link eventKey={2} href="/juegos" className="navbar__color">
-                Juegos
+                JUEGOS
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

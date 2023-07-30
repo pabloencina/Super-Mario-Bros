@@ -49,6 +49,7 @@
         box-shadow: 0 0 10px 5px $colorSkyBlue;
         margin-top: 50px;
         height: 200px;
+        text-transform: uppercase;
     }
     
     &__text{
@@ -86,12 +87,14 @@
         height: 50px;
         font-family: $fontFamilyMonospace;
         font-size: 20px;
+        text-transform: uppercase;
     }
     
     &__text_pregunta{
         font-family: $fontFamilyMonospace;
         font-size: 20px;
         color: $colorWhite;
+        text-transform: uppercase;
     }
 }
 
@@ -136,6 +139,7 @@
         font-size: 60px;
         font-weight: 500;
         color: $colorWhite;
+        text-transform: uppercase;
     }
   }
 
