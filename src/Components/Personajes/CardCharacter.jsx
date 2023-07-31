@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
-import cajaDePregunta from "../../Images/signo-de-pregunta.png";
+import { Card } from "react-bootstrap";
+//import cajaDePregunta from "../../Images/signo-de-pregunta.png";
 import { Link } from "react-router-dom";
 
 const CardCharacters = ({ character }) => {
@@ -15,29 +15,13 @@ const CardCharacters = ({ character }) => {
       </div>
 
       <Card.Body>
-        <div className="charactersCard__container_title">
-          <p className="charactersCard__title">
-            {character.name.toUpperCase()}
-          </p>
-        </div>
-
-        <div className="charactersCard__container_button">
-          <Button
-            style={{
-              textDecoration: "none",
-              backgroundColor: "inherit",
-              border: "none",
-            }}
-          >
-            <Link to={`/detalle/${character.id}`}>
-              <img
-                src={cajaDePregunta}
-                alt="caja"
-                className="charactersCard__button_image"
-              />
-            </Link>
-          </Button>
-        </div>
+        <Link to={`/detalle/${character.id}`}>
+          <div className="charactersCard__container_title">
+            <p className="charactersCard__title">
+              {character.name.toUpperCase()}
+            </p>
+          </div>
+        </Link>
       </Card.Body>
     </Card>
   );

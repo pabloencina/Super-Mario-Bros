@@ -33,7 +33,7 @@
     100% { left: calc(100% - 200px); } /* La imagen termina en la posición derecha */
   }
 
-  @media screen and (min-width: 350px) and (max-width: 500px) {
+  @media screen and (min-width: 350px) and (max-width: 700px) {
     footer{
         &__container_general{
                 background-color: $colorGreen;

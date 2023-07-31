@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { Button, Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 
 const DetailCardById = ({ charactersData }) => {
   const { id } = useParams();
@@ -30,14 +30,10 @@ const DetailCardById = ({ charactersData }) => {
                 {description.toUpperCase()}
               </p>
             </div>
-            <div className="detailCardById__container_link">
-              <div>
-                <Button className="detailCardById__button">
-                  <Link to={"/personajes"} className="detailCardById__link">
-                    Volver
-                  </Link>
-                </Button>
-              </div>
+            <div className="detailCardById__link_container">
+              <Link to={"/personajes"} className="detailCardById__link">
+                <div className="detailCardById__text">Volver</div>
+              </Link>
             </div>
           </div>
         </div>

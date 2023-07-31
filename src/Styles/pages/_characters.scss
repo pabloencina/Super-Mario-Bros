@@ -1,29 +1,41 @@
 .charactersCard{
   
     &__container_card{
-        width: 370px;
-        border: 5px solid $colorSkyBlue;
-        border-radius: 120px 50px ;
-        box-shadow: 0 0 10px 5px $colorSkyBlue;
+        width: 350px;
+        //margin-top: 30px;
+        margin-bottom: 30px;
     }
     &__container_title{
-        height: 130px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 5px solid $colorGreen;
-        background-color: $colorGreen;
-        border-radius: 70px 10px ;
+        border: 1px solid $colorGreen;
+        &:hover{
+            background-color: $colorGreen;
+            color: $colorWhite;
+         }
+    }
+    &__btn_name{
+        text-decoration: none;
+        background-color: inherit;
+        border: none;
+        height: 100px;
+        width: 100%;
+        
     }
     &__title{
         font-family: $fontFamilyVt323;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 500;
-        color: $colorWhite;
-        width: 75%;
+        color: $colorGreen;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover{
+            color: $colorWhite;
+         }
     }
     &__container_description{
         height: 280px;
@@ -52,7 +64,7 @@
         animation: slideAnimation 3s linear infinite;
     }
     &__container_button{
-        height: 150px;
+       height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,6 +98,7 @@
         font-weight: 500;
         color: $colorWhite;
         margin: 50px;
+        text-transform: uppercase;
     }
 }
 
@@ -104,7 +117,7 @@
         height: 500px;
     }
     &__content{
-        flex: 0 0 40%; /* El contenido ocupará el 50% del ancho */
+        flex: 0 0 40%; 
         display: flex;
         flex-direction: column;
         
@@ -135,23 +148,38 @@
         font-family: $fontFamilyMonospace;
         font-size: 16px;
     }
-    &__container_link{
-        width: 100%;
-        height: 100px;
+    &__text{
+        background-color: $colorWhite;
+        color: $colorGreen;
+        width: 100px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: none;
+        text-transform: uppercase;
+            &:hover{
+                background-color: $colorGreen;
+                color: $colorWhite;
+        }
+    }
+    &__link_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     &__link{
         font-family: $fontFamilyVt323;
         font-size: 30px;
         font-weight: 500;
-        color: $colorWhite;
         text-decoration: none;
+        border: 1px solid $colorGreen;
+       
     }
     &__button{
         background-color: $colorGreen;
         border: none;
+        text-transform: uppercase;
     }
     &__container_card{
         background-color: $colorBlue;
@@ -193,29 +221,27 @@
   }
   
   
-  @media screen and (min-width: 350px) and (max-width: 500px) {
+  @media screen and (min-width: 350px) and (max-width: 700px) {
     .charactersCard{
-  
         &__container_card{
             width: 100%;
-            border: 5px solid $colorSkyBlue;
-            border-radius: 100px 50px ;
-            box-shadow: 0 0 10px 5px $colorSkyBlue;
         }
         &__container_title{
             height: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 5px solid $colorGreen;
-            background-color: $colorGreen;
-            border-radius: 70px 10px ;
+            border: 1px solid $colorGreen;
+            &:hover{
+                background-color: $colorGreen;
+                color: $colorWhite;
+             }
         }
         &__title{
             font-family: $fontFamilyVt323;
             font-size: 30px;
             font-weight: 500;
-            color: $colorWhite;
+            color: $colorGreen;
             width: 75%;
             display: flex;
             justify-content: center;
@@ -276,15 +302,13 @@
             font-weight: 500;
             color: $colorWhite;
             margin: 50px;
+            text-transform: uppercase;
         }
     }
     
     .detailCardById{
         &__container{
-            //display: flex;
-            //height: auto;
             width: 100%;
-            //transition: transform 0.5s ease;
         }
         &__container_row{
             flex-direction: column;
@@ -297,14 +321,12 @@
         }
         &__image{
             height: 350px;
-            //width: 100%;
         }
         &__container_name{
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            //height: 250px;
             background-color:$colorWhite;
         }
         &__name{
@@ -324,9 +346,24 @@
             font-size: 16px;
             width: 90%;
         }
-        &__container_link{
+        &__text{
+            background-color: $colorGreen ;
+            color: $colorWhite;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            text-transform: uppercase;
+                &:hover{
+                    background-color: $colorGreen;
+                    color: $colorWhite;
+            }
+        }
+        &__link_container{
             width: 100%;
-            height: 150px;
+            height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -335,12 +372,13 @@
             font-family: $fontFamilyVt323;
             font-size: 30px;
             font-weight: 500;
-            color: $colorWhite;
             text-decoration: none;
+           
         }
         &__button{
             background-color: $colorGreen;
             border: none;
+            text-transform: uppercase;
         }
         &__container_card{
             background-color: $colorBlue;
@@ -350,4 +388,230 @@
             align-items: center;
         }
     }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    .charactersCard{
+  
+        &__container_card{
+            width: 220px;
+            margin-bottom: 10px;
+        }
+        &__container_title{
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $colorGreen;
+            &:hover{
+                background-color: $colorGreen;
+                color: $colorWhite;
+             }
+        }
+        &__btn_name{
+            text-decoration: none;
+            background-color: inherit;
+            border: none;
+            height: 100px;
+            width: 100%;
+            
+        }
+        &__title{
+            font-family: $fontFamilyVt323;
+            font-size: 30px;
+            font-weight: 500;
+            color: $colorGreen;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                color: $colorWhite;
+             }
+        }
+        &__container_description{
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        &__description{
+            font-family: $fontFamilyMonospace;
+            font-size: 16px;
+        }
+        &__container_image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            overflow: hidden;
+            border-bottom: 1px solid $colorGreen;
+        }
+        &__image{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 0;
+            animation: slideAnimation 3s linear infinite;
+        }
+        &__container_button{
+           height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__button_image{
+            background-color: $colorYellow;
+            border: none;
+            height: 50px;
+            font-family: monospace;
+            font-size: 16px;
+        }
+    }
+    
+    .presentation{
+        background-color:$colorBlue;
+        &__container_image{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+        &__container_text{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        &__text{
+            font-family: $fontFamilyVt323;
+            font-size: 40px;
+            font-weight: 500;
+            color: $colorWhite;
+            margin: 50px;
+            text-transform: uppercase;
+        }
+    }
+    
+    .detailCardById{
+        &__container{
+            display: flex;
+            height: auto;
+            width: 100%;
+        }
+        &__container_image{
+            flex: 0 0 60%;   
+            display: flex;
+            justify-content: center;
+        }
+        &__image{
+            height: 500px;
+        }
+        &__content{
+            flex: 0 0 40%; 
+            display: flex;
+            flex-direction: column;
+            
+        }
+        &__container_name{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color:  $colorGreen;
+        }
+        &__name{
+            font-family: $fontFamilyVt323;
+            font-size: 30px;
+            font-weight: 500;
+            color: $colorWhite;
+        }
+        &__container_description{
+            width: 90%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        &__description{
+            font-family: $fontFamilyMonospace;
+            font-size: 14px;
+        }
+        &__text{
+            background-color: $colorWhite;
+            color: $colorGreen;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            text-transform: uppercase;
+                &:hover{
+                    background-color: $colorGreen;
+                    color: $colorWhite;
+            }
+        }
+        &__link_container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__link{
+            font-family: $fontFamilyVt323;
+            font-size: 30px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid $colorGreen;
+           
+        }
+        &__button{
+            background-color: $colorGreen;
+            border: none;
+            text-transform: uppercase;
+        }
+        &__container_card{
+            background-color: $colorBlue;
+            height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @keyframes slideAnimation {
+        0% { left: 0; } /* La imagen empieza en la posición izquierda */
+        100% { left: calc(100% - 300px); } /* La imagen termina en la posición derecha */
+      }
+    @keyframes slideInRight {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      .image-animation {
+        animation: slideInRight 1s ease;
+      }
+      
+    
+      @keyframes rotate {
+        from {
+          transform: rotate(1deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .charactersCard__button_image {
+        animation: rotate 3s linear infinite; /* La animación se repite infinitamente */
+      }
+      
   }
