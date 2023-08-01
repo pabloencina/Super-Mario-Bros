@@ -385,7 +385,7 @@
       }
 .carousel{
         &__container{
-            height: 800px;
+            //height: 800px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -393,7 +393,7 @@
         }
         &__image{
             width: 100%;
-            height: 600px;
+            height: 300px;
             display: flex;
             justify-content: center;
         }

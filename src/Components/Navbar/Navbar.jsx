@@ -28,6 +28,9 @@ function NavbarComponent() {
               </Nav.Link>
             </Nav>
             <Nav style={{ marginLeft: "20px" }}>
+              <Nav.Link href="/estados-animo" className="navbar__color">
+                MI ESTADO
+              </Nav.Link>
               <Nav.Link href="/videos" className="navbar__color">
                 VIDEOS
               </Nav.Link>
