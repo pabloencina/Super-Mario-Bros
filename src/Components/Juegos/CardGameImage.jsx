@@ -21,8 +21,8 @@ const CardGameImage = ({ charactersData, handleCardClick }) => {
           key={id}
           onClick={handleCardClick}
         >
-          <Row sm={12} className="">
-            <Col md={6} sm={12} className="game__container_image">
+          <Row sm={12} md={6} className="">
+            <Col md={6} className="game__container_image">
               <img src={image} alt="menu" className="game__image" />
             </Col>
 

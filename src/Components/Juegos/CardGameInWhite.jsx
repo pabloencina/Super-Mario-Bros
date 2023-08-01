@@ -8,7 +8,7 @@ const CardGameInWhite = ({ handleCardClick }) => {
       <Button className="game__button_card" onClick={handleCardClick}>
         <Card className="game__card_container">
           <Row sm={12} className="">
-            <Col md={6} sm={12} className="game__container_image_questionBox">
+            <Col md={6} className="game__container_image_questionBox">
               <img
                 src={questionBox}
                 alt="menu"
