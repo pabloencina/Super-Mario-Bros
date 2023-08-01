@@ -10,7 +10,7 @@ const Moods = () => {
         </p>
       </div>
       <div className="">
-        <p className="">¿COMO TE SIENTES HOY?</p>
+        <p className="">CONTAME AMIGUITO ¿COMO TE SIENTES HOY?</p>
       </div>
     </Container>
   );
