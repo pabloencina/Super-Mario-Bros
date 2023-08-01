@@ -24,10 +24,10 @@ const moodsData = [
   {
     id: 2,
     name: "Triste",
-    nameEnglish: Sad,
+    nameEnglish: "Sad",
     description:
       "Es cuando te sientes un poco bajito y con ganas de llorar, pero recuerda que está bien sentirse así y siempre puedes hablar con alguien sobre tus sentimientos.",
-    image: "",
+    image: Sad,
     phrase1:
       "No importa cuántas lágrimas derrames, siempre hay un arcoíris después de la lluvia.",
     phrase2:

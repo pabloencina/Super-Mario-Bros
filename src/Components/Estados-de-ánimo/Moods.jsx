@@ -1,5 +1,7 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import moodsData from "../../Data/moodsData";
+import CardMoods from "./CardMoods";
 
 const Moods = () => {
   return (
@@ -11,6 +13,17 @@ const Moods = () => {
       </div>
       <div className="">
         <p className="">CONTAME AMIGUITO ¿COMO TE SIENTES HOY?</p>
+      </div>
+      <div>
+        <Row>
+          {moodsData.map((mood) => {
+            return (
+              <Col style={{ marginTop: "20px" }} key={mood.id} md={4}>
+                <CardMoods key={mood.id} mood={mood} />
+              </Col>
+            );
+          })}
+        </Row>
       </div>
     </Container>
   );
