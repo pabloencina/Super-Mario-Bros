@@ -1,3 +1,35 @@
+.section-mood{
+    &__container{
+        &__title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        &__title_instruction{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        &__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__title{
+        font-family: $fontFamilyVt323;
+        font-size: 50px;
+        color: $colorWhite;
+    }
+    &__title_instruction{
+        font-family: $fontFamilyVt323;
+        font-size: 30px;
+        color: $colorWhite;
+    }
+}
+
 .moods{
     &__container{
         &__card{
@@ -109,9 +141,6 @@
         display: flex;
         flex-direction: column;
     }
-    // &__image{
-    //     width: 80%;
-    // }
     &__name{
         font-family: $fontFamilyVt323;
         font-size: 50px;
@@ -153,5 +182,38 @@
                 background-color: $colorGreen;
                 color: $colorWhite;
         }
+    }
+}
+
+.toast-moods{
+    &__title{
+        font-family: $fontFamilyMonospace;
+        font-size: 24px;
+        color: $colorGreen;
+    }
+    &__text{
+        font-family: $fontFamilyMonospace;
+        font-size: 14px;
+        text-transform: uppercase;   
+    }
+    &__btn{
+        background-color: $colorGreen;
+        color: $colorWhite;
+        border: none;
+        &:hover{
+            background-color: $colorWhite;
+            color: $colorGreen;
+        }
+    }
+    &__container{
+        &__img{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__img{
+        width: 120px;
     }
 }

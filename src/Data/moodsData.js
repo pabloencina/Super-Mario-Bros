@@ -7,7 +7,7 @@ import Bored from "../Images/Image-moods/Boring-mood-image.png";
 import Grateful from "../Images/Image-moods/Grateful-mood-image.png";
 import Confused from "../Images/Image-moods/Confused-mood-image.png";
 import Proud from "../Images/Image-moods/Proud-mood-image.png";
-import Tired from "../Images/Image-moods/Tired-mood-image.png";
+import Tired from "../Images/Image-moods/Tired-moods-image.png";
 
 const moodsData = [
   {
