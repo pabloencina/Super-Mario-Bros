@@ -28,7 +28,7 @@ const Moods = () => {
         <Row>
           {moodsData.map((mood) => {
             return (
-              <Col style={{ marginTop: "50px" }} key={mood.id} md={4}>
+              <Col key={mood.id} md={4}>
                 <CardMoods key={mood.id} mood={mood} />
               </Col>
             );

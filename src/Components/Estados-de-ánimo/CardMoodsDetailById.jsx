@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 
 const CardMoodsDetailById = ({ moodsData }) => {
@@ -20,7 +20,7 @@ const CardMoodsDetailById = ({ moodsData }) => {
           <img src={image} alt="menu" className="detailMoodsById__image" />
         </Col>
 
-        <div className="detailMoodsById__content">
+        <Container className="detailMoodsById__content">
           <div md={6}>
             <div className="detailMoodsById__container__name">
               <p className="detailMoodsById__name">{name.toUpperCase()}</p>
@@ -46,7 +46,7 @@ const CardMoodsDetailById = ({ moodsData }) => {
               </Link>
             </div>
           </div>
-        </div>
+        </Container>
       </Row>
     </Card>
   );

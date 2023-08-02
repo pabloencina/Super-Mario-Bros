@@ -217,3 +217,489 @@
         width: 120px;
     }
 }
+
+@media screen and (min-width: 350px) and (max-width: 550px) {
+    .section-mood{
+        &__container{
+            &__title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+            }
+            &__title_instruction{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+            }
+            &__img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__title{
+            font-family: $fontFamilyVt323;
+            font-size: 30px;
+            color: $colorWhite;
+        }
+        &__title_instruction{
+            font-family: $fontFamilyVt323;
+            font-size: 20px;
+            color: $colorWhite;
+        }
+    }
+    
+    .moods{
+        &__container{
+            &__card{
+                width: 350px;
+                height: 400px;
+                &:hover{
+                    background-color: $colorYellow;
+                }
+            }
+            &__image{
+                width: 100%;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__name{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__nameEnglish{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    
+        &__name{
+            font-family: $fontFamilyMonospace;
+            font-size: 26px;
+            color: $colorBlue;
+            &:hover{
+                color: $colorGreen;
+            }
+        }
+        &__nameEnglish{
+            font-family: $fontFamilyMonospace;
+            font-size: 26px;
+            color: $colorGreen;
+            &:hover{
+                color: $colorBlue;
+            }
+        }
+        
+    }
+    
+    .detailMoodsById{
+        &__container{
+            &__card{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //height: 500px;
+                width: 100%;
+            }
+            &__row{
+                flex-direction: column;
+            }
+           &__image{
+                //flex: 0 0 50%;   
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: $colorGreen;
+                }
+           }
+            &__name{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                background-color:  $colorWhite;
+                
+            }
+            &__description{
+                width: 90%;
+                margin-left: 20px;
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            &__phrase1{
+                width: 90%;
+                margin-top: 15px;
+                margin-left: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            &__phrase2{
+                width: 90%;
+                margin-top: 15px;
+                margin-left: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            &__link{
+                width: 100%;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__image{
+            width: 200px;
+            height: 200px;
+        }
+        &__content{
+            //flex: 0 0 50%; 
+            display: flex;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //flex-direction: column;
+        }
+        &__name{
+            font-family: $fontFamilyVt323;
+            font-size: 50px;
+            font-weight: 500;
+            color: $colorGreen;
+        }
+        &__description{
+            font-family: $fontFamilyMonospace;
+            font-size: 16px;
+        }
+        &__phrase1{
+            font-family: $fontFamilyMonospace;
+            font-size: 14px;
+            color: $colorGreen;
+        }
+        &__phrase2{
+            font-family: $fontFamilyMonospace;
+            font-size: 14px;
+            color: $colorBlue;
+        }
+        &__link{
+            font-family: $fontFamilyVt323;
+            font-size: 30px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid $colorGreen;       
+        }
+        &__textLink{
+            background-color: $colorWhite;
+            color: $colorGreen;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            text-transform: uppercase;
+                &:hover{
+                    background-color: $colorGreen;
+                    color: $colorWhite;
+            }
+        }
+    }
+    
+    .toast-moods{
+        &__title{
+            font-family: $fontFamilyMonospace;
+            font-size: 24px;
+            color: $colorGreen;
+        }
+        &__text{
+            font-family: $fontFamilyMonospace;
+            font-size: 14px;
+            text-transform: uppercase;   
+        }
+        &__btn{
+            background-color: $colorGreen;
+            color: $colorWhite;
+            border: none;
+            &:hover{
+                background-color: $colorWhite;
+                color: $colorGreen;
+            }
+        }
+        &__container{
+            &__img{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__img{
+            width: 120px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+    .section-mood{
+        &__container{
+            &__title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+            }
+            &__title_instruction{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+            }
+            &__img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__title{
+            font-family: $fontFamilyVt323;
+            font-size: 30px;
+            color: $colorWhite;
+        }
+        &__title_instruction{
+            font-family: $fontFamilyVt323;
+            font-size: 20px;
+            color: $colorWhite;
+        }
+    }
+    
+    .moods{
+        &__container{
+            &__card{
+                width: 200px;
+                height: 300px;
+                &:hover{
+                    background-color: $colorYellow;
+                }
+            }
+            &__image{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__name{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__nameEnglish{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    
+        &__name{
+            font-family: $fontFamilyMonospace;
+            font-size: 26px;
+            color: $colorBlue;
+            &:hover{
+                color: $colorGreen;
+            }
+        }
+        &__nameEnglish{
+            font-family: $fontFamilyMonospace;
+            font-size: 26px;
+            color: $colorGreen;
+            &:hover{
+                color: $colorBlue;
+            }
+        }
+        &__image{
+            width: 150px;
+            height: 150px;
+        }
+        
+    }
+    
+    .detailMoodsById{
+        &__container{
+            &__card{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //height: 500px;
+                width: 100%;
+            }
+            &__row{
+                flex-direction: column;
+            }
+           &__image{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: $colorGreen;
+                }
+           }
+            &__name{
+                //width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                background-color:  $colorWhite;
+                
+            }
+            &__description{
+                margin-left: 20px;
+                width: 95%;
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            &__phrase1{
+                width: 100%;
+                margin-top: 15px;
+                //height: 100px;
+             
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            &__phrase2{
+                width: 100%;
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            &__link{
+                width: 100%;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__image{
+            width: 200px;
+            height: 200px;
+        }
+        &__content{
+            //flex: 0 0 50%; 
+            display: flex;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //flex-direction: column;
+        }
+        &__name{
+            font-family: $fontFamilyVt323;
+            font-size: 50px;
+            font-weight: 500;
+            color: $colorGreen;
+        }
+        &__description{
+            font-family: $fontFamilyMonospace;
+            font-size: 16px;
+        }
+        &__phrase1{
+            font-family: $fontFamilyMonospace;
+            font-size: 14px;
+            color: $colorGreen;
+        }
+        &__phrase2{
+            font-family: $fontFamilyMonospace;
+            font-size: 14px;
+            color: $colorBlue;
+        }
+        &__link{
+            font-family: $fontFamilyVt323;
+            font-size: 30px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid $colorGreen;       
+        }
+        &__textLink{
+            background-color: $colorWhite;
+            color: $colorGreen;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            text-transform: uppercase;
+                &:hover{
+                    background-color: $colorGreen;
+                    color: $colorWhite;
+            }
+        }
+    }
+    
+    .toast-moods{
+        &__title{
+            font-family: $fontFamilyMonospace;
+            font-size: 24px;
+            color: $colorGreen;
+        }
+        &__text{
+            font-family: $fontFamilyMonospace;
+            font-size: 14px;
+            text-transform: uppercase;   
+        }
+        &__btn{
+            background-color: $colorGreen;
+            color: $colorWhite;
+            border: none;
+            &:hover{
+                background-color: $colorWhite;
+                color: $colorGreen;
+            }
+        }
+        &__container{
+            &__img{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__img{
+            width: 120px;
+        }
+    }
+    
+}
