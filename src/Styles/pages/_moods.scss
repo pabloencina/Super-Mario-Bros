@@ -196,6 +196,11 @@
         font-size: 14px;
         text-transform: uppercase;   
     }
+    &__rule-name{
+        color: $colorBlue;
+        font-size: 22px;
+        font-weight: 500;
+    }
     &__btn{
         background-color: $colorGreen;
         color: $colorWhite;
@@ -434,6 +439,11 @@
             font-family: $fontFamilyMonospace;
             font-size: 14px;
             text-transform: uppercase;   
+        }
+        &__ruleName{
+            color: $colorBlue;
+            font-size: 24px;
+            font-weight: 500;
         }
         &__btn{
             background-color: $colorGreen;
@@ -679,6 +689,11 @@
             font-family: $fontFamilyMonospace;
             font-size: 14px;
             text-transform: uppercase;   
+        }
+        &__ruleName{
+            color: $colorBlue;
+            font-size: 24px;
+            font-weight: 500;
         }
         &__btn{
             background-color: $colorGreen;

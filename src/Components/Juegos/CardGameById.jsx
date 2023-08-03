@@ -1,31 +1,29 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import charactersData from "../../Data/charactersData";
-import CardContainer from "./CardContainer";
+import React, { useState } from "react";
+import { Button, Card, Container } from "react-bootstrap";
+import CardGameInWhite from "./CardGameInWhite";
+import CardGameImage from "./CardGameImage";
 
-const CardGameById = () => {
-  const randomIndex = Math.floor(Math.random() * charactersData.length);
-  const randomCharacter = charactersData[randomIndex];
+const CardGameById = ({ charactersData, onCardClick }) => {
+  const [showNewCard, setShowNewCard] = useState(false);
+
+  const handleCardClick = () => {
+    setShowNewCard(!showNewCard);
+  };
+
   return (
-    <Container>
-      <div className="game__container_title">
-        <p className="game__title">
-          {`¿DÓNDE SE ENCUENTRA `}
-          <span className="game__span_name">
-            {randomCharacter.name.toLocaleUpperCase()}
-          </span>
-          ?
-        </p>
-      </div>
-      <Row>
-        {charactersData.map((card) => {
-          return (
-            <Col key={card.id} md={4} className="">
-              <CardContainer key={card.id} charactersData={charactersData} />
-            </Col>
-          );
-        })}
-      </Row>
+    <Container className="game__container">
+      <Button className="game__button_card">
+        <Card className="game__card_container">
+          {!showNewCard ? (
+            <CardGameInWhite handleCardClick={handleCardClick} />
+          ) : (
+            <CardGameImage
+              onCardClick={handleCardClick}
+              charactersData={charactersData}
+            />
+          )}
+        </Card>
+      </Button>
     </Container>
   );
 };
