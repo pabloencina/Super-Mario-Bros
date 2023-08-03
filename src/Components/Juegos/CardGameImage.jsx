@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 
-const CardGameImage = ({ charactersData, handleCardClick }) => {
-  const randomIndexGameImage = Math.floor(
-    Math.random() * charactersData.length
-  );
-
-  const randomCharacterGameImage = charactersData[randomIndexGameImage];
-  const { name, image, id } = randomCharacterGameImage;
+const CardGameImage = ({
+  charactersData,
+  handleCardClick,
+  handleCardClickName,
+  character,
+}) => {
+  const { name, image, id } = character;
 
   return (
     <Container className="game__container">
@@ -15,7 +15,10 @@ const CardGameImage = ({ charactersData, handleCardClick }) => {
         <Card
           className="game__card_container"
           key={id}
-          onClick={() => handleCardClick(name)}
+          onClick={() => {
+            handleCardClick();
+            handleCardClickName(name);
+          }}
         >
           <Row sm={12} md={6} className="">
             <Col md={6} className="game__container_image">

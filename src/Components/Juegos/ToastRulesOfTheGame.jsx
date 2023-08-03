@@ -32,7 +32,7 @@ function ToastRulesOfTheGame() {
             <img className="toast-moods__img" src={Rainbow} alt="Rainbow" />
           </div>
           <p className="toast-moods__rule-name">Reglas del juego:</p>
-          <p className="toast-moods__rule-name">1_) Preparación:</p>
+          <p className="toast-moods__rule-name">1_ Preparación:</p>
           <p>
             {" "}
             Coloca varias cartas boca abajo en la pantalla. Cada carta contiene
@@ -41,19 +41,19 @@ function ToastRulesOfTheGame() {
           <div className="toast-moods__container__img">
             <img className="toast-moods__img" src={Rainbow} alt="Rainbow" />
           </div>
-          <p className="toast-moods__rule-name">Jugabilidad:</p>
+          <p className="toast-moods__rule-name"> 2_ Jugabilidad:</p>
           <p>
-            2_)Al comenzar el juego, se muestra un personaje en el título del
+            Al comenzar el juego, se muestra un personaje en el título del
             juego. Los jugadores pueden hacer clic en una carta para voltearla y
             revelar el dibujo y el nombre del personaje.
           </p>
           <div className="toast-moods__container__img">
             <img className="toast-moods__img" src={Rainbow} alt="Rainbow" />
           </div>
-          <p className="toast-moods__rule-name">Revelar Cartas:</p>
+          <p className="toast-moods__rule-name">3_ Revelar Cartas:</p>
           <p>
             {" "}
-            3_) Cuando un jugador hace clic en una carta, se voltea y muestra el
+            Cuando un jugador hace clic en una carta, se voltea y muestra el
             dibujo del personaje y su nombre. Si el nombre del personaje en la
             carta coincide con el personaje en el título, se muestra un cartel
             de felicitaciones y el jugador gana puntos.
@@ -61,22 +61,22 @@ function ToastRulesOfTheGame() {
           <div className="toast-moods__container__img">
             <img className="toast-moods__img" src={Rainbow} alt="Rainbow" />
           </div>
-          <p className="toast-moods__rule-name">Puntuación:</p>
+          <p className="toast-moods__rule-name">4_ Puntuación:</p>
           <p>
-            4_)Cada vez que un jugador encuentra una carta que coincide con el
+            Cada vez que un jugador encuentra una carta que coincide con el
             personaje del título, gana una cierta cantidad de puntos. Puedes
             mostrar la puntuación acumulada en algún lugar de la pantalla.
           </p>
           <div className="toast-moods__container__img">
             <img className="toast-moods__img" src={Rainbow} alt="Rainbow" />
           </div>
-          <p className="toast-moods__rule-name">Continuación:</p>
+          <p className="toast-moods__rule-name"> 5_ Continuación:</p>
           <p>
             {" "}
-            5_)Después de encontrar una coincidencia o al hacer clic en una
-            carta incorrecta, el juego continúa mostrando un nuevo personaje en
-            el título. Los jugadores pueden seguir haciendo clic en las cartas
-            para encontrar más coincidencias y ganar más puntos.
+            Después de encontrar una coincidencia o al hacer clic en una carta
+            incorrecta, el juego continúa mostrando un nuevo personaje en el
+            título. Los jugadores pueden seguir haciendo clic en las cartas para
+            encontrar más coincidencias y ganar más puntos.
           </p>
         </Modal.Body>
         <Modal.Footer>

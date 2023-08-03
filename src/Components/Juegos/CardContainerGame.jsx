@@ -6,7 +6,7 @@ import ToastRulesOfTheGame from "./ToastRulesOfTheGame";
 const CardContainerGame = ({ charactersData }) => {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
 
-  const handleCardClick = (characterName) => {
+  const handleCardClickName = (characterName) => {
     console.log("Personaje clickeado:", characterName);
     setSelectedCharacter(characterName);
   };
@@ -16,6 +16,11 @@ const CardContainerGame = ({ charactersData }) => {
   console.log(randomCharacter.name, selectedCharacter);
   return (
     <Container>
+      <div className="game__container_title">
+        <p className="game__title">
+          HOLA AMIGUITO!!! ¿QUIERES JUGAR CONMIGO A UN JUEGO MUY DIVERTIDO?
+        </p>
+      </div>
       <div className="game__container_title">
         <p className="game__title">
           {`¿DÓNDE SE ENCUENTRA `}
@@ -29,19 +34,21 @@ const CardContainerGame = ({ charactersData }) => {
         {selectedCharacter === randomCharacter.name ? (
           <span className="game__message_win">
             <p>FELICITACIONES !!! TU PUNTUACIÓN ES DE: </p>
-            {console.log(232323)}
           </span>
         ) : null}
+      </Container>
+      <Container className="game__btn_toast_rules">
         <ToastRulesOfTheGame />
       </Container>
       <Row>
-        {charactersData.map((card) => {
+        {charactersData.map((character) => {
           return (
-            <Col key={card.id} md={4} className="">
+            <Col key={character.id} md={4} className="">
               <CardGameById
-                key={card.id}
+                key={character.id}
                 charactersData={charactersData}
-                onClick={() => handleCardClick(card.name)}
+                character={character}
+                handleCardClickName={handleCardClickName}
               />
             </Col>
           );
