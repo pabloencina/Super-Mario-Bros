@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../Images/mario-logo.png";
+import { NavDropdown } from "react-bootstrap";
 
 function NavbarComponent() {
   return (
@@ -34,9 +35,24 @@ function NavbarComponent() {
               <Nav.Link href="/videos" className="navbar__color">
                 VIDEOS
               </Nav.Link>
-              <Nav.Link eventKey={2} href="/juegos" className="navbar__color">
+              {/* <Nav.Link eventKey={2} href="/juegos" className="navbar__color">
                 JUEGOS
-              </Nav.Link>
+              </Nav.Link> */}
+              <NavDropdown
+                eventKey={2}
+                title="JUEGOS"
+                //id="basic-nav-dropdown"
+                href="/juegos/"
+                className="navbar__color"
+              >
+                <NavDropdown.Item href="/juegos/adivinanza">
+                  ADIVINANZA
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/juegos/abecedario">
+                  ABECEDARIO
+                </NavDropdown.Item>
+                {/* <NavDropdown.Item href="juego3">Something</NavDropdown.Item> */}
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,7 +1,8 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import questionBox from "../../Images/signo-de-pregunta.png";
+//import questionBox from "../../Images/signo-de-pregunta.png";
+import questionBox from "../../../Images/signo-de-pregunta.png";
 import { Link } from "react-router-dom";
-import { useClicks } from "../Context/ClicContext";
+import { useClicks } from "../../Context/ClicContext";
 
 const CardGameInWhite = ({
   handleCardClick,

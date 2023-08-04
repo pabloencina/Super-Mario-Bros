@@ -6,6 +6,16 @@ $colorSkyBlue:  #049cd8;
 $colorGreen: #43b047;
 $colorBlue: #1D5D9B;
 
+$color-azul-oscuro: #003366;
+$color-azul-medio: #336699;
+$color-azul-claro: #66aaff;
+$gradiente-azul: linear-gradient(to right, $color-azul-oscuro, $color-azul-medio, $color-azul-claro);
+
+$color-amarillo-oscuro: #ffcc00;
+$color-amarillo-medio: #ffdb58;
+$color-amarillo-claro: #ffff99;
+$gradiente-amarillo: linear-gradient(to right, $color-amarillo-oscuro, $color-amarillo-medio, $color-amarillo-claro);
+
 $colorFondoNavbar: #cacaca;
 $colorRosado: #ff0099;
 

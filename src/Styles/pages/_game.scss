@@ -3,6 +3,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: -30px;
     }
     &__container_title{
         width: 100%;
@@ -28,6 +29,18 @@
         font-size: 40px;
         //font-weight: 500;
         color: $colorWhite;
+        background-color: $colorBlue;
+    }
+    &__title_span{
+        font-family: $fontFamilyVt323;
+        font-size: 40px;
+        //font-weight: 500;
+        color: $colorWhite;
+        background-color: $colorBlue;
+        height: 100px;
+        //position: fixed;
+        //top: -10px;
+        //z-index: 999;
     }
     &__button_card{
         background-color: transparent;

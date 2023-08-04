@@ -13,8 +13,9 @@ import VideoById from "./Components/Videos-Mario/VideoById";
 import Moods from "./Components/Estados-de-ánimo/Moods";
 import moodsData from "./Data/moodsData";
 import CardMoodsById from "./Components/Estados-de-ánimo/CardMoodsById";
-import CardContainerRandomName from "./Components/Juegos/CardContainerRandomName";
+import CardContainerRandomName from "./Components/Juegos/Adivinanza/CardContainerRandomName";
 import { ClicksProvider } from "./Components/Context/ClicContext";
+import AlphabetGameCardMap from "./Components/Juegos/Abecedario/AlphabetGameCardMap";
 
 function App() {
   return (
@@ -37,11 +38,12 @@ function App() {
           <Route path="/videos" element={<VideoById />} />
 
           <Route
-            path="/juegos"
+            path="/juegos/adivinanza"
             element={
               <CardContainerRandomName charactersData={charactersData} />
             }
           />
+          <Route path="/juegos/abecedario" element={<AlphabetGameCardMap />} />
         </Routes>
         <Footer />
       </BrowserRouter>

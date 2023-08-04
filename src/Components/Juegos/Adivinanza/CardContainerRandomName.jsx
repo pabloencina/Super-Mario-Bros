@@ -18,7 +18,7 @@ const CardContainerRandomName = ({ charactersData }) => {
         <ToastRulesOfTheGame />
       </Container>
       <div className="game__container_title">
-        <p className="game__title">
+        <p className="game__title_span">
           {`¿DÓNDE SE ENCUENTRA `}
           <span className="game__span_name">
             {randomCharacter.name.toLocaleUpperCase()}
@@ -26,20 +26,21 @@ const CardContainerRandomName = ({ charactersData }) => {
           ?
         </p>
       </div>
-
-      <Row>
-        {charactersData.map((character) => {
-          return (
-            <Col key={character.id} md={4} className="">
-              <CardContainerGame
-                key={character.id}
-                character={character}
-                randomCharacter={randomCharacter}
-              />
-            </Col>
-          );
-        })}
-      </Row>
+      <Container>
+        <Row>
+          {charactersData.map((character) => {
+            return (
+              <Col key={character.id} md={4} className="">
+                <CardContainerGame
+                  key={character.id}
+                  character={character}
+                  randomCharacter={randomCharacter}
+                />
+              </Col>
+            );
+          })}
+        </Row>
+      </Container>
     </Container>
   );
 };
