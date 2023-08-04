@@ -1,12 +1,7 @@
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 
-const CardGameImage = ({
-  charactersData,
-  handleCardClick,
-  handleCardClickName,
-  character,
-}) => {
+const CardGameImage = ({ handleCardClick, handleCardClickName, character }) => {
   const { name, image, id } = character;
 
   return (

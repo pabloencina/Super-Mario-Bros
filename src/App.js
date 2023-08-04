@@ -10,10 +10,10 @@ import charactersData from "./Data/charactersData";
 import MyStory from "./Components/Mi-Historia/MyStory";
 import Footer from "./Components/Footer/Footer";
 import VideoById from "./Components/Videos-Mario/VideoById";
-import CardContainerGame from "./Components/Juegos/CardContainerGame";
 import Moods from "./Components/Estados-de-ánimo/Moods";
 import moodsData from "./Data/moodsData";
 import CardMoodsById from "./Components/Estados-de-ánimo/CardMoodsById";
+import CardContainerRandomName from "./Components/Juegos/CardContainerRandomName";
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
         <Route path="/videos" element={<VideoById />} />
         <Route
           path="/juegos"
-          element={<CardContainerGame charactersData={charactersData} />}
+          element={<CardContainerRandomName charactersData={charactersData} />}
         />
       </Routes>
       <Footer />

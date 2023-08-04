@@ -3,7 +3,7 @@ import { Button, Card, Container } from "react-bootstrap";
 import CardGameInWhite from "./CardGameInWhite";
 import CardGameImage from "./CardGameImage";
 
-const CardGameById = ({ charactersData, handleCardClickName, character }) => {
+const CardGameById = ({ handleCardClickName, character }) => {
   const [showNewCard, setShowNewCard] = useState(false);
 
   const handleCardClick = () => {
@@ -20,7 +20,6 @@ const CardGameById = ({ charactersData, handleCardClickName, character }) => {
             <CardGameImage
               handleCardClick={handleCardClick}
               handleCardClickName={handleCardClickName}
-              charactersData={charactersData}
               character={character}
             />
           )}

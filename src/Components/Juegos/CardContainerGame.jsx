@@ -1,58 +1,33 @@
-import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import CardGameById from "./CardGameById";
-import ToastRulesOfTheGame from "./ToastRulesOfTheGame";
+import { useState } from "react";
 
-const CardContainerGame = ({ charactersData }) => {
+const CardContainerGame = ({ character, randomCharacter }) => {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   const handleCardClickName = (characterName) => {
-    console.log("Personaje clickeado:", characterName);
+    console.log("Personaje clicked:", characterName);
     setSelectedCharacter(characterName);
   };
-
-  const randomIndex = Math.floor(Math.random() * charactersData.length);
-  const randomCharacter = charactersData[randomIndex];
-  console.log(randomCharacter.name, selectedCharacter);
   return (
     <Container>
-      <div className="game__container_title">
-        <p className="game__title">
-          HOLA AMIGUITO!!! ¿QUIERES JUGAR CONMIGO A UN JUEGO MUY DIVERTIDO?
-        </p>
-      </div>
-      <div className="game__container_title">
-        <p className="game__title">
-          {`¿DÓNDE SE ENCUENTRA `}
-          <span className="game__span_name">
-            {randomCharacter.name.toLocaleUpperCase()}
-          </span>
-          ?
-        </p>
-      </div>
-      <Container>
-        {selectedCharacter === randomCharacter.name ? (
-          <span className="game__message_win">
-            <p>FELICITACIONES !!! TU PUNTUACIÓN ES DE: </p>
-          </span>
-        ) : null}
-      </Container>
-      <Container className="game__btn_toast_rules">
-        <ToastRulesOfTheGame />
-      </Container>
+      {selectedCharacter === randomCharacter.name ? (
+        <span className="game__container_message_win">
+          <p className="game__message_win">
+            FELICITACIONES !!! TU PUNTUACIÓN ES DE:{" "}
+          </p>
+        </span>
+      ) : null}
+      <Container className="game__btn_toast_rules"></Container>
+
       <Row>
-        {charactersData.map((character) => {
-          return (
-            <Col key={character.id} md={4} className="">
-              <CardGameById
-                key={character.id}
-                charactersData={charactersData}
-                character={character}
-                handleCardClickName={handleCardClickName}
-              />
-            </Col>
-          );
-        })}
+        <Col>
+          <CardGameById
+            key={character.id}
+            character={character}
+            handleCardClickName={handleCardClickName}
+          />
+        </Col>
       </Row>
     </Container>
   );
