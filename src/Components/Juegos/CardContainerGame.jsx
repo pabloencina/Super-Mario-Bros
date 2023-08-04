@@ -9,6 +9,7 @@ const CardContainerGame = ({ character, randomCharacter }) => {
     console.log("Personaje clicked:", characterName);
     setSelectedCharacter(characterName);
   };
+
   return (
     <Container>
       <Container className="game__btn_toast_rules"></Container>

@@ -14,32 +14,38 @@ import Moods from "./Components/Estados-de-ánimo/Moods";
 import moodsData from "./Data/moodsData";
 import CardMoodsById from "./Components/Estados-de-ánimo/CardMoodsById";
 import CardContainerRandomName from "./Components/Juegos/CardContainerRandomName";
+import { ClicksProvider } from "./Components/Context/ClicContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavbarComponent />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/personajes" element={<SectionCardsCharacters />} />
-        <Route
-          path="/detalle/:id"
-          element={<CardById charactersData={charactersData} />}
-        />
-        <Route path="/mi-historia" element={<MyStory />} />
-        <Route path="/estados-animo" element={<Moods />} />
-        <Route
-          path="/estados-animo/:id"
-          element={<CardMoodsById moodsData={moodsData} />}
-        />
-        <Route path="/videos" element={<VideoById />} />
-        <Route
-          path="/juegos"
-          element={<CardContainerRandomName charactersData={charactersData} />}
-        />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <ClicksProvider>
+      <BrowserRouter>
+        <NavbarComponent />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/personajes" element={<SectionCardsCharacters />} />
+          <Route
+            path="/detalle/:id"
+            element={<CardById charactersData={charactersData} />}
+          />
+          <Route path="/mi-historia" element={<MyStory />} />
+          <Route path="/estados-animo" element={<Moods />} />
+          <Route
+            path="/estados-animo/:id"
+            element={<CardMoodsById moodsData={moodsData} />}
+          />
+          <Route path="/videos" element={<VideoById />} />
+
+          <Route
+            path="/juegos"
+            element={
+              <CardContainerRandomName charactersData={charactersData} />
+            }
+          />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </ClicksProvider>
   );
 }
 
