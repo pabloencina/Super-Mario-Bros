@@ -76,14 +76,52 @@
         height: 100%;
     }
     &__container_message_win{
-        background-color: red;
-        width: 350px;
+        background-color: $colorGreen;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
     }
     &__message_win{
         color: $colorWhite;
         font-family: $fontFamilyVt323;
         font-size: 30px;
     }
+    &__message-point{
+        font-family: $fontFamilyVt323;
+        font-size: 60px;
+        color: $colorYellow;
+    }
+    &__container_btn-game{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &__btn-game{
+        height: 35px;
+        background-color:$colorWhite ;
+        color: $colorGreen;
+        border: none;
+        text-decoration: none;
+        border-radius: 2px;
+        &:hover{
+            background-color: $colorYellow;
+            color: $colorWhite;
+         }
+    }
+    &__message_win {
+        opacity: 1;
+        animation: blink 1s infinite alternate;
+      }
+      
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
 }
 
 @media screen and (min-width: 350px) and (max-width: 700px) {

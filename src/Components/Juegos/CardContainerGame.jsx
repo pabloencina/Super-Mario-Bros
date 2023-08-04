@@ -11,13 +11,6 @@ const CardContainerGame = ({ character, randomCharacter }) => {
   };
   return (
     <Container>
-      {selectedCharacter === randomCharacter.name ? (
-        <span className="game__container_message_win">
-          <p className="game__message_win">
-            FELICITACIONES !!! TU PUNTUACIÓN ES DE:{" "}
-          </p>
-        </span>
-      ) : null}
       <Container className="game__btn_toast_rules"></Container>
 
       <Row>
@@ -26,6 +19,8 @@ const CardContainerGame = ({ character, randomCharacter }) => {
             key={character.id}
             character={character}
             handleCardClickName={handleCardClickName}
+            randomCharacter={randomCharacter}
+            selectedCharacter={selectedCharacter}
           />
         </Col>
       </Row>
