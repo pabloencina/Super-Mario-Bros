@@ -51,6 +51,9 @@ function NavbarComponent() {
                 <NavDropdown.Item href="/juegos/abecedario">
                   ABECEDARIO
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/juegos/preguntados">
+                  PREGUNTADOS
+                </NavDropdown.Item>
                 {/* <NavDropdown.Item href="juego3">Something</NavDropdown.Item> */}
               </NavDropdown>
             </Nav>

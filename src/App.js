@@ -16,6 +16,8 @@ import CardMoodsById from "./Components/Estados-de-ánimo/CardMoodsById";
 import CardContainerRandomName from "./Components/Juegos/Adivinanza/CardContainerRandomName";
 import { ClicksProvider } from "./Components/Context/ClicContext";
 import AlphabetGameCardMap from "./Components/Juegos/Abecedario/AlphabetGameCardMap";
+import AskedCardById from "./Components/Juegos/Preguntados/AskedCardById";
+import askedData from "./Data/askedData";
 
 function App() {
   return (
@@ -44,6 +46,10 @@ function App() {
             }
           />
           <Route path="/juegos/abecedario" element={<AlphabetGameCardMap />} />
+          <Route
+            path="/juegos/preguntados"
+            element={<AskedCardById askedData={askedData} />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,0 +1,97 @@
+.game-preguntados-card{
+    &__container{
+        &__general{
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__card{
+            width: 500px;
+        }
+        &__image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__content{
+            text-align: center;
+        }
+        &__btn-changeCard1{
+            display: inline-block;
+            justify-content: flex-start;
+            width: 50%
+        }
+        &__btn-changeCard2{
+            display: inline-block;
+            justify-content: flex-end;
+            width: 50%
+        }
+    }
+    &__image{
+        width: 150px;
+    }
+    &__btn{
+        &__answer1{
+            background-color: $colorYellow;
+            border: none;
+            color: black;
+            &:hover{
+                background-color: black;
+                color: $colorYellow;
+            }
+        }
+        &__answer2{
+            background-color: $colorGreen;
+            border: none;
+            color: $colorWhite;
+            &:hover{
+                background-color: $colorWhite;
+                color: $colorGreen;
+            }
+        }
+        &__answer3{
+            background-color: $colorRed;
+            border: none;
+            color: $colorWhite;
+            &:hover{
+                background-color: $colorWhite;
+                color: $colorRed;
+            }
+        }
+        &__following{
+            background-color: $colorWhite;
+            border: none;
+            color: $colorBlue;
+            &:hover{
+                background-color: $colorWhite;
+                color: black;
+            }
+        }
+        &__former{
+            background-color: $colorWhite;
+            border: none;
+            color: $colorBlue;
+            &:hover{
+                background-color: $colorWhite;
+                color: black;
+            }
+        }
+    }
+    
+}
