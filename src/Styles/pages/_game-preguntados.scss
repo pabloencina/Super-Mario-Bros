@@ -2,12 +2,13 @@
     &__container{
         
         &__general{
-            height: 550px;
-            margin: 20px;
-           
+            width: 490px;
+            height: 390px;
+            margin: 30px;
         }
         &__card{
             width: 500px;
+            margin-left: 10px;
         }
         &__image{
             display: flex;
@@ -46,12 +47,33 @@
             background-color: $colorWhite;
             height: 55px;
             border-radius: 5px;
-            //margin-top: 10px;
+            margin-left: 65px;
             display: flex;
             justify-content:center;
             align-items: center;
             width: 500px;
+            
         }
+        &__buttons{
+            display: flex;
+            width: 50%;
+            height: 100px;
+        }
+        &__number-questions{
+            height: 80px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+    }
+    &__number-questions{
+        color: $colorWhite;
+        font-family: $fontFamilyMonospace;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__column{
+        margin-left: -50px;
     }
     &__image{
         width: 150px;
@@ -67,7 +89,7 @@
         font-size: 14px;
     }
     &__btn{
-        &__answer1{
+        &__answer{
             background-color: $colorYellow;
             border: none;
             color: black;
@@ -77,26 +99,26 @@
                 color: $colorYellow;
             }
         }
-        &__answer2{
-            background-color: $colorGreen;
-            border: none;
-            color: $colorWhite;
-            text-transform: uppercase;
-            &:hover{
-                background-color: $colorWhite;
-                color: $colorGreen;
-            }
-        }
-        &__answer3{
-            background-color: $colorRed;
-            border: none;
-            color: $colorWhite;
-            text-transform: uppercase;
-            &:hover{
-                background-color: $colorWhite;
-                color: $colorRed;
-            }
-        }
+        // &__answer2{
+        //     background-color: $colorGreen;
+        //     border: none;
+        //     color: $colorWhite;
+        //     text-transform: uppercase;
+        //     &:hover{
+        //         background-color: $colorWhite;
+        //         color: $colorGreen;
+        //     }
+        // }
+        // &__answer3{
+        //     background-color: $colorRed;
+        //     border: none;
+        //     color: $colorWhite;
+        //     text-transform: uppercase;
+        //     &:hover{
+        //         background-color: $colorWhite;
+        //         color: $colorRed;
+        //     }
+        // }
         
         &__next{
             font-family: $fontFamilyMonospace;
@@ -126,4 +148,35 @@
         }
     }
     
+}
+.section-result-questions{
+    &__container{
+        &__result{
+            flex-direction:column;
+            width: 100%;
+        }
+        &__text{
+            width: 100%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+        }
+        &__image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+    }
+    &__text{
+        color: $colorWhite;
+        font-family: $fontFamilyMonospace;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__image{
+        width: 300px;
+    }
 }

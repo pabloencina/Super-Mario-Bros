@@ -3,7 +3,13 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import imagePreguntados from "../../../Images/Image-preguntados.png";
 
-function AskedCard({ askCard }) {
+function AskedCard({ askCard, isActive }) {
+  if (!isActive) {
+    return null;
+  }
+  const handleClickQuestionButton = (buttonIndex) => {
+    console.log(`Clicked button at index: ${buttonIndex}`);
+  };
   return (
     <Container className="game-preguntados-card__container__general">
       <Card className="game-preguntados-card__container__card">
@@ -14,7 +20,6 @@ function AskedCard({ askCard }) {
             src={imagePreguntados}
           />
         </div>
-
         <Card.Body>
           <div className="game-preguntados-card__container__title">
             <Card.Title className="game-preguntados-card__title">
@@ -28,27 +33,18 @@ function AskedCard({ askCard }) {
           </div>
         </Card.Body>
         <ListGroup className="list-group-flush">
-          <ListGroup.Item>
-            <div className="game-preguntados-card__container__btn">
-              <Button className="game-preguntados-card__btn__answer1">
-                {askCard.answers[0].answer}
-              </Button>
-            </div>
-          </ListGroup.Item>
-          <ListGroup.Item>
-            <div className="game-preguntados-card__container__btn">
-              <Button className="game-preguntados-card__btn__answer2">
-                {askCard.answers[2].answer}
-              </Button>
-            </div>
-          </ListGroup.Item>
-          <ListGroup.Item>
-            <div className="game-preguntados-card__container__btn">
-              <Button className="game-preguntados-card__btn__answer3">
-                {askCard.answers[4].answer}
-              </Button>
-            </div>
-          </ListGroup.Item>
+          {askCard.answers.map((answer, index) => (
+            <ListGroup.Item key={index}>
+              <div className="game-preguntados-card__container__btn">
+                <Button
+                  onClick={() => handleClickQuestionButton(index)}
+                  className={`game-preguntados-card__btn__answer${index + 1}`}
+                >
+                  {answer.answer}
+                </Button>
+              </div>
+            </ListGroup.Item>
+          ))}
         </ListGroup>
       </Card>
     </Container>
