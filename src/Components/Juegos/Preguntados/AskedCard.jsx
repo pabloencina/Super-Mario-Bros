@@ -3,13 +3,11 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import imagePreguntados from "../../../Images/Image-preguntados.png";
 
-function AskedCard({ askCard, isActive }) {
+function AskedCard({ askCard, isActive, handleClickQuestionButton }) {
   if (!isActive) {
     return null;
   }
-  const handleClickQuestionButton = (buttonIndex) => {
-    console.log(`Clicked button at index: ${buttonIndex}`);
-  };
+
   return (
     <Container className="game-preguntados-card__container__general">
       <Card className="game-preguntados-card__container__card">
