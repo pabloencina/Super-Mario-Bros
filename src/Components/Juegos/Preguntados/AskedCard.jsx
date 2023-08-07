@@ -35,6 +35,12 @@ function AskedCard({ askCard, isActive, handleClickQuestionButton }) {
             <ListGroup.Item key={index}>
               <div className="game-preguntados-card__container__btn">
                 <Button
+                  style={{
+                    backgroundColor: "#43b047",
+                    border: "none",
+                    fontFamily: "Monospace",
+                    textTransform: "uppercase",
+                  }}
                   onClick={() => handleClickQuestionButton(index)}
                   className={`game-preguntados-card__btn__answer${index + 1}`}
                 >

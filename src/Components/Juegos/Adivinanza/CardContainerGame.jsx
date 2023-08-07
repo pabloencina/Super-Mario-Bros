@@ -6,7 +6,6 @@ const CardContainerGame = ({ character, randomCharacter }) => {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   const handleCardClickName = (characterName) => {
-    console.log("Personaje clicked:", characterName);
     setSelectedCharacter(characterName);
   };
 

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import AskedCard from "./AskedCard";
 import BtnAskedNextPrevious from "./BtnAsked-next-previous";
 import mario from "../../../Images/MarioBros-answer-correct.png";
 import marioSad from "../../../Images/MarioBros-answer-incorrect.png";
+import QuestionScoresObtained from "./QuestionScoresObtained";
+import { Link } from "react-router-dom";
 
 const AnswerStatus = {
   NOT_ANSWERED: 0,
@@ -42,6 +44,24 @@ const AskedCardById = ({ askedData }) => {
   return (
     <Container style={{ flexDirection: "column" }}>
       <Container>
+        {activeCardIndex === askedData.length - 1 && (
+          <Container>
+            <QuestionScoresObtained
+              askedData={askedData.length}
+              countAnswerCorrect={countAnswerCorrect}
+            />
+            <div className="game-preguntados-card__container__btn_renew-game">
+              <Link to="/juegos/preguntados" className="game__btn-game">
+                <Button
+                  onClick={() => window.location.reload()}
+                  className="game-preguntados-card__btn__renew-game"
+                >
+                  ¿QUIERES SEGUIR JUGANDO?
+                </Button>
+              </Link>
+            </div>
+          </Container>
+        )}
         <Row>
           <Col md={6}>
             <div className="game-preguntados-card__container__number-questions">
@@ -106,7 +126,7 @@ const AskedCardById = ({ askedData }) => {
       </div>
       <div className="game-preguntados-card__container__number-questions">
         <p className="game-preguntados-card__number-questions">
-          RESPUESTAS CORRECTAS {countAnswerCorrect}{" "}
+          RESPUESTAS CORRECTAS {countAnswerCorrect}
         </p>
       </div>
     </Container>

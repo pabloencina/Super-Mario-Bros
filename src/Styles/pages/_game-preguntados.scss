@@ -1,6 +1,5 @@
 .game-preguntados-card{
     &__container{
-        
         &__general{
             width: 490px;
             height: 390px;
@@ -52,7 +51,6 @@
             justify-content:center;
             align-items: center;
             width: 500px;
-            
         }
         &__buttons{
             display: flex;
@@ -64,6 +62,12 @@
             display: flex;
             justify-content:center;
             align-items: center;
+        }
+        &__btn_renew-game{
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
         }
     }
     &__number-questions{
@@ -88,6 +92,7 @@
         font-family: $fontFamilyMonospace;
         font-size: 14px;
     }
+    
     &__btn{
         &__answer{
             background-color: $colorYellow;
@@ -99,27 +104,18 @@
                 color: $colorYellow;
             }
         }
-        // &__answer2{
-        //     background-color: $colorGreen;
-        //     border: none;
-        //     color: $colorWhite;
-        //     text-transform: uppercase;
-        //     &:hover{
-        //         background-color: $colorWhite;
-        //         color: $colorGreen;
-        //     }
-        // }
-        // &__answer3{
-        //     background-color: $colorRed;
-        //     border: none;
-        //     color: $colorWhite;
-        //     text-transform: uppercase;
-        //     &:hover{
-        //         background-color: $colorWhite;
-        //         color: $colorRed;
-        //     }
-        // }
-        
+        &__renew-game{
+            height: 35px;
+            background-color:$colorWhite ;
+            color: $colorGreen;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            &:hover{
+                background-color: $colorYellow;
+                color: $colorWhite;
+             }
+        }
         &__next{
             font-family: $fontFamilyMonospace;
             font-size: 14px;
@@ -177,6 +173,6 @@
         font-weight: bold;
     }
     &__image{
-        width: 300px;
+        width: 200px;
     }
 }
