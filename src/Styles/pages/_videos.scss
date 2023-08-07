@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 700px) {
+@media screen and (min-width: 350px) and (max-width: 600px) {
     .videos{
         &__youTube{
             width: 300px;
@@ -205,7 +205,7 @@
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
     .videos{
         
         &__container_youTube{
@@ -289,7 +289,7 @@
         &__name{
             font-family:  $fontFamilyMonospace;
             font-size: 20px;
-            color: $colorBlue;
+            color: $colorWhite;
             font-weight: bold;
         }
         &__image_luma{

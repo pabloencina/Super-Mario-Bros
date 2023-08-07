@@ -1,11 +1,6 @@
 import { Button, Card, Container } from "react-bootstrap";
 
-const BtnAskedNextPrevious = ({
-  askedData,
-  activeCardIndex,
-  handleNextCard,
-  handlePreviousCard,
-}) => {
+const BtnAskedNextPrevious = ({ handleNextCard, handlePreviousCard }) => {
   return (
     <Container>
       <Card.Body>

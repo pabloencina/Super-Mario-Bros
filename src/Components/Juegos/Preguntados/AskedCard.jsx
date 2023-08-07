@@ -40,6 +40,7 @@ function AskedCard({ askCard, isActive, handleClickQuestionButton }) {
                     border: "none",
                     fontFamily: "Monospace",
                     textTransform: "uppercase",
+                    fontSize: "12px",
                   }}
                   onClick={() => handleClickQuestionButton(index)}
                   className={`game-preguntados-card__btn__answer${index + 1}`}

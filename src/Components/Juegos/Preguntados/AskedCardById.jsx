@@ -63,7 +63,7 @@ const AskedCardById = ({ askedData }) => {
           </Container>
         )}
         <Row>
-          <Col md={6}>
+          <Col md={6} xs={12} sm={12}>
             <div className="game-preguntados-card__container__number-questions">
               <p className="game-preguntados-card__number-questions">
                 PREGUNTA NÚMERO {activeCardIndex + 1}, TOTAL DE PREGUNTAS{" "}
