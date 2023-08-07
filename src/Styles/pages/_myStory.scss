@@ -51,10 +51,12 @@
     50% { transform: translateX(-50%) translateY(-10px); }
   }
 
-  @media screen and (min-width: 350px) and (max-width: 700px) {
+  @media screen and (min-width: 350px) and (max-width: 600px) {
     .myStory{
         &__container_section{
             background-color: $colorBlue;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         &__container_title{
             width: 100%;
@@ -74,11 +76,13 @@
         }
         &__container_image{
             width: 100%;
-            height: 550px;
+            height: 480px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            
+            align-items: center;  
+        }
+        &__image{
+            height: 450px;
         }
         &__container_paragraph{
             display: flex;
@@ -111,7 +115,7 @@
     }
   }
 
-  @media screen and (min-width: 700px) and (max-width: 1000px) {
+  @media screen and (min-width: 600px) and (max-width: 1000px) {
     .myStory{
         &__container_section{
             background-color: $colorBlue;

@@ -140,7 +140,7 @@
     }
   }
 
-  @media screen and (min-width: 350px) and (max-width: 700px) {
+  @media screen and (min-width: 350px) and (max-width: 600px) {
     .home{
         background-color: $colorBlue;
         transition: margin-top 0.3s ease;
@@ -269,7 +269,7 @@
       }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
 
     .home{
         background-color: $colorBlue;
@@ -385,7 +385,7 @@
       }
 .carousel{
         &__container{
-            //height: 800px;
+            height: 600px;
             display: flex;
             justify-content: center;
             align-items: center;

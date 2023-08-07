@@ -30,7 +30,7 @@ const CardContainerRandomName = ({ charactersData }) => {
         <Row>
           {charactersData.map((character) => {
             return (
-              <Col key={character.id} md={4} className="">
+              <Col xs={4} key={character.id} md={4} className="">
                 <CardContainerGame
                   key={character.id}
                   character={character}

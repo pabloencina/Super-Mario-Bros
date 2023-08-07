@@ -11,8 +11,6 @@ const CardContainerGame = ({ character, randomCharacter }) => {
 
   return (
     <Container>
-      <Container className="game__btn_toast_rules"></Container>
-
       <Row>
         <Col>
           <CardGameById

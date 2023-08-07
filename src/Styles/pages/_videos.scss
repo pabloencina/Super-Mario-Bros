@@ -105,15 +105,15 @@
             width: 300px;
         }
         &__container_youTube{
-            width: 390px;
-            height: auto;
+             width: 100%;
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
             justify-content: center;
             align-items: center;
-            //background-color: aqua;
+            flex-direction:row;
         }
         &__container_image_mario{
-            //width: 100%;
             display: flex;
             justify-content: flex-end;
         }
@@ -135,7 +135,7 @@
         &__text_mario{
             font-family:  $fontFamilyMonospace;
             font-size: 12px;
-            color: $colorBlue;
+            color: $colorBlack;
             font-weight: bold;
         }
         &__letters{
@@ -182,7 +182,7 @@
         &__name{
             font-family:  $fontFamilyMonospace;
             font-size: 20px;
-            color: $colorBlue;
+            color: $colorWhite;
             font-weight: bold;
         }
         &__image_luma{
@@ -200,7 +200,7 @@
         &__title{
             font-family: $fontFamilyVt323;
             color: $colorWhite;
-            font-size: 40px;
+            font-size: 20px;
         }
     }
 }
@@ -222,7 +222,6 @@
         }
         &__container_reactPlayer{
             width: 350px;
-            background-color: aqua;
         }
         &__image_mario{
             width: 100px; 
@@ -241,8 +240,8 @@
         }
         &__text_mario{
             font-family:  $fontFamilyMonospace;
-            font-size: 12px;
-            color: $colorBlue;
+            font-size: 15px;
+            color: $colorBlack;
             font-weight: bold;
         }
         &__letters{

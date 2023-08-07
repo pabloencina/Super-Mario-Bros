@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Container className="footer__container_general">
       <div className="footer__container_name">
-        <p className="footer__name">Mario Bros</p>
+        <p className="footer__name">MARIO BROS</p>
       </div>
       <div className="footer__container_image">
         <Link to={"/personajes"}>

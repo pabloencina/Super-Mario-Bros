@@ -15,7 +15,7 @@ const CardGameInWhite = ({
       ? totalClicks === 1
         ? "FELICITACIONES!!! OBTUVISTE:"
         : totalClicks >= 2 && totalClicks <= 5
-        ? "LO HAS HECHO MUY BIEN, SIGUE ASÍ. OBTUVISTE:"
+        ? "LO HAS HECHO BIEN. OBTUVISTE:"
         : totalClicks >= 5 && totalClicks <= 7
         ? "LO HAS HECHO BIEN. OBTUVISTE:"
         : totalClicks >= 7 && totalClicks <= 10
@@ -46,7 +46,7 @@ const CardGameInWhite = ({
       >
         <Card className="game__card_container">
           {selectedCharacter === randomCharacter.name ? (
-            <span className="game__container_message_win">
+            <span className="game__container__message_win">
               <p className="game__message_win">{message}</p>
               <p className="game__message-point">{points} PUNTOS</p>
               <div className="game__container_btn-game">
@@ -56,7 +56,7 @@ const CardGameInWhite = ({
                     onClick={() => window.location.reload()}
                     className="game__btn-game"
                   >
-                    ¿QUIERES SEGUIR JUGANDO?
+                    ¿SEGUIR JUGANDO?
                   </Button>
                 </Link>
                 {/* </Button> */}
