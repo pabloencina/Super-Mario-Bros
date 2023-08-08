@@ -7,12 +7,14 @@ const VideoCard = ({ video }) => {
 
   // Definir el ancho del video utilizando un condicional ternario
   const videoWidth =
-    windowWidth >= 700 && windowWidth <= 1000
-      ? "320px"
-      : windowWidth >= 350 && windowWidth <= 700
-      ? "360px"
+    windowWidth >= 750 && windowWidth <= 1000
+      ? "100%"
+      : windowWidth >= 350 && windowWidth <= 450
+      ? "100%"
+      : windowWidth >= 450 && windowWidth <= 750
+      ? "100%"
       : windowWidth >= 1000
-      ? "520px"
+      ? "100%"
       : "100%";
 
   return (

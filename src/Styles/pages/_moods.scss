@@ -4,13 +4,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 200px;
+            height: 12.5rem;
         }
         &__title_instruction{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100px;
+            height: 6.25rem;
         }
         &__img{
             display: flex;
@@ -20,12 +20,12 @@
     }
     &__title{
         font-family: $fontFamilyVt323;
-        font-size: 50px;
+        font-size: 3.125rem;
         color: $colorWhite;
     }
     &__title_instruction{
         font-family: $fontFamilyVt323;
-        font-size: 30px;
+        font-size: 1.875rem;
         color: $colorWhite;
     }
 }
@@ -33,30 +33,30 @@
 .moods{
     &__container{
         &__card{
-            width: 320px;
-            margin-bottom: 30px;
-            height: 400px;
+            width: 20rem;
+            margin-bottom: 1.875rem;
+            height: 25rem;
             &:hover{
                 background-color: $colorYellow;
             }
         }
         &__image{
             width: 100%;
-            height: 300px;
+            height: 18.75rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         &__name{
             width: 100%;
-            height: 30px;
+            height: 1.875rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         &__nameEnglish{
             width: 100%;
-            height: 30px;
+            height: 1.875rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -65,7 +65,7 @@
 
     &__name{
         font-family: $fontFamilyMonospace;
-        font-size: 26px;
+        font-size: 1.625rem;
         color: $colorBlue;
         &:hover{
             color: $colorGreen;
@@ -73,7 +73,7 @@
     }
     &__nameEnglish{
         font-family: $fontFamilyMonospace;
-        font-size: 26px;
+        font-size: 1.625rem;
         color: $colorGreen;
         &:hover{
             color: $colorBlue;
@@ -108,28 +108,28 @@
         }
         &__description{
             width: 90%;
-            height: 200px;
+            height: 12.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         &__phrase1{
             width: 90%;
-            height: 100px;
+            height: 6.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         &__phrase2{
             width: 90%;
-            height: 100px;
+            height: 6.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         &__link{
             width: 90%;
-            height: 100px;
+            height: 6.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -149,11 +149,11 @@
     }
     &__description{
         font-family: $fontFamilyMonospace;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     &__phrase1{
         font-family: $fontFamilyMonospace;
-        font-size: 16px;
+        font-size: 1rem;
         color: $colorGreen;
     }
     &__phrase2{
@@ -163,7 +163,7 @@
     }
     &__link{
         font-family: $fontFamilyVt323;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 500;
         text-decoration: none;
         border: 1px solid $colorGreen;       
@@ -171,8 +171,8 @@
     &__textLink{
         background-color: $colorWhite;
         color: $colorGreen;
-        width: 100px;
-        height: 50px;
+        width: 6.25rem;
+        height: 3.125rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -188,17 +188,17 @@
 .toast-moods{
     &__title{
         font-family: $fontFamilyMonospace;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: $colorGreen;
     }
     &__text{
         font-family: $fontFamilyMonospace;
-        font-size: 14px;
+        font-size: 0.875rem;
         text-transform: uppercase;   
     }
     &__rule-name{
         color: $colorBlue;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 500;
     }
     &__btn{
@@ -219,7 +219,7 @@
         }
     }
     &__img{
-        width: 120px;
+        width: 7.5rem;
     }
 }
 
@@ -231,13 +231,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 200px;
+                height: 12.5rem;
             }
             &__title_instruction{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 200px;
+                height: 12.5rem;
             }
             &__img{
                 display: flex;
@@ -247,12 +247,12 @@
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             color: $colorWhite;
         }
         &__title_instruction{
             font-family: $fontFamilyVt323;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: $colorWhite;
         }
     }
@@ -261,7 +261,7 @@
         &__container{
             &__card{
                 //width: 100%;
-                height: 400px;
+                height: 25rem;
                 &:hover{
                     background-color: $colorYellow;
                 }
@@ -275,14 +275,14 @@
             }
             &__name{
                 width: 100%;
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             &__nameEnglish{
                 width: 100%;
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -291,7 +291,7 @@
     
         &__name{
             font-family: $fontFamilyMonospace;
-            font-size: 26px;
+            font-size: 1.625rem;
             color: $colorBlue;
             &:hover{
                 color: $colorGreen;
@@ -299,7 +299,7 @@
         }
         &__nameEnglish{
             font-family: $fontFamilyMonospace;
-            font-size: 26px;
+            font-size: 1.625rem;
             color: $colorGreen;
             &:hover{
                 color: $colorBlue;
@@ -340,8 +340,8 @@
             }
             &__description{
                 width: 90%;
-                margin-left: 20px;
-                margin-top: 15px;
+                margin-left: 1.25rem;
+                margin-top: 0.9375rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -349,8 +349,8 @@
             }
             &__phrase1{
                 width: 90%;
-                margin-top: 15px;
-                margin-left: 20px;
+                margin-top: 0.9375rem;
+                margin-left: 1.25rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -358,8 +358,8 @@
             }
             &__phrase2{
                 width: 90%;
-                margin-top: 15px;
-                margin-left: 20px;
+                margin-top: 0.9375rem;
+                margin-left: 1.25rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -374,8 +374,8 @@
             }
         }
         &__image{
-            width: 200px;
-            height: 200px;
+            width: 12.5rem;
+            height: 12.5rem;
         }
         &__content{
             //flex: 0 0 50%; 
@@ -388,27 +388,27 @@
         }
         &__name{
             font-family: $fontFamilyVt323;
-            font-size: 50px;
+            font-size: 3.125rem;
             font-weight: 500;
             color: $colorGreen;
         }
         &__description{
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
         &__phrase1{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $colorGreen;
         }
         &__phrase2{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $colorBlue;
         }
         &__link{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             text-decoration: none;
             border: 1px solid $colorGreen;       
@@ -416,8 +416,8 @@
         &__textLink{
             background-color: $colorWhite;
             color: $colorGreen;
-            width: 100px;
-            height: 50px;
+            width: 6.25rem;
+            height: 3.125rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -433,17 +433,17 @@
     .toast-moods{
         &__title{
             font-family: $fontFamilyMonospace;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: $colorGreen;
         }
         &__text{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             text-transform: uppercase;   
         }
         &__ruleName{
             color: $colorBlue;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 500;
         }
         &__btn{
@@ -464,7 +464,7 @@
             }
         }
         &__img{
-            width: 120px;
+            width: 7.5rem;
         }
     }
     
@@ -477,13 +477,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 200px;
+                height: 12.5rem;
             }
             &__title_instruction{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 200px;
+                height: 12.5rem;
                 
             }
             &__img{
@@ -494,12 +494,12 @@
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             color: $colorWhite;
         }
         &__title_instruction{
             font-family: $fontFamilyVt323;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: $colorWhite;
         }
     }
@@ -507,8 +507,8 @@
     .moods{
         &__container{
             &__card{
-                width: 260px;
-                height: 300px;
+                width: 16.25rem;
+                height: 18.75rem;
                 margin-left: 0px;
                 margin-right: 0px;
                 &:hover{
@@ -517,21 +517,21 @@
             }
             &__image{
                 width: 100%;
-                height: 200px;
+                height: 12.5rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             &__name{
                 width: 100%;
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             &__nameEnglish{
                 width: 100%;
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -540,7 +540,7 @@
     
         &__name{
             font-family: $fontFamilyMonospace;
-            font-size: 26px;
+            font-size: 1.625rem;
             color: $colorBlue;
             &:hover{
                 color: $colorGreen;
@@ -548,15 +548,15 @@
         }
         &__nameEnglish{
             font-family: $fontFamilyMonospace;
-            font-size: 26px;
+            font-size: 1.625rem;
             color: $colorGreen;
             &:hover{
                 color: $colorBlue;
             }
         }
         &__image{
-            width: 150px;
-            height: 150px;
+            width: 9.375rem;
+            height: 9.375rem;
         }
         
     }
@@ -592,9 +592,9 @@
                 
             }
             &__description{
-                margin-left: 20px;
+                margin-left: 1.25rem;
                 width: 95%;
-                margin-top: 15px;
+                margin-top: 0.9375rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -602,7 +602,7 @@
             }
             &__phrase1{
                 width: 100%;
-                margin-top: 15px;
+                margin-top: 0.9375rem;
                 //height: 100px;
              
                 display: flex;
@@ -612,7 +612,7 @@
             }
             &__phrase2{
                 width: 100%;
-                margin-top: 15px;
+                margin-top: 0.9375rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -627,8 +627,8 @@
             }
         }
         &__image{
-            width: 200px;
-            height: 200px;
+            width: 12.5rem;
+            height: 12.5rem;
         }
         &__content{
             //flex: 0 0 50%; 
@@ -641,27 +641,27 @@
         }
         &__name{
             font-family: $fontFamilyVt323;
-            font-size: 50px;
+            font-size: 3.125rem;
             font-weight: 500;
             color: $colorGreen;
         }
         &__description{
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
         &__phrase1{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $colorGreen;
         }
         &__phrase2{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $colorBlue;
         }
         &__link{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             text-decoration: none;
             border: 1px solid $colorGreen;       
@@ -669,8 +669,8 @@
         &__textLink{
             background-color: $colorWhite;
             color: $colorGreen;
-            width: 100px;
-            height: 50px;
+            width: 6.25rem;
+            height: 3.125rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -686,17 +686,17 @@
     .toast-moods{
         &__title{
             font-family: $fontFamilyMonospace;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: $colorGreen;
         }
         &__text{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             text-transform: uppercase;   
         }
         &__ruleName{
             color: $colorBlue;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 500;
         }
         &__btn{
@@ -717,7 +717,7 @@
             }
         }
         &__img{
-            width: 120px;
+            width: 7.5rem;
         }
     }
     
@@ -730,13 +730,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 200px;
+                height: 12.5rem;
             }
             &__title_instruction{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 200px;
+                height: 12.5rem;
             }
             &__img{
                 display: flex;
@@ -746,12 +746,12 @@
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             color: $colorWhite;
         }
         &__title_instruction{
             font-family: $fontFamilyVt323;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: $colorWhite;
         }
     }
@@ -759,29 +759,29 @@
     .moods{
         &__container{
             &__card{
-                width: 200px;
-                height: 300px;
+                width: 12.5rem;
+                height: 18.75rem;
                 &:hover{
                     background-color: $colorYellow;
                 }
             }
             &__image{
                 width: 100%;
-                height: 200px;
+                height: 12.5rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             &__name{
                 width: 100%;
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             &__nameEnglish{
                 width: 100%;
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -790,7 +790,7 @@
     
         &__name{
             font-family: $fontFamilyMonospace;
-            font-size: 26px;
+            font-size: 1.625rem;
             color: $colorBlue;
             &:hover{
                 color: $colorGreen;
@@ -798,15 +798,15 @@
         }
         &__nameEnglish{
             font-family: $fontFamilyMonospace;
-            font-size: 26px;
+            font-size: 1.625rem;
             color: $colorGreen;
             &:hover{
                 color: $colorBlue;
             }
         }
         &__image{
-            width: 150px;
-            height: 150px;
+            width: 9.375rem;
+            height: 9.375rem;
         }
         
     }
@@ -842,9 +842,9 @@
                 
             }
             &__description{
-                margin-left: 20px;
+                margin-left: 1.25rem;
                 width: 95%;
-                margin-top: 15px;
+                margin-top: 0.9375rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -852,7 +852,7 @@
             }
             &__phrase1{
                 width: 100%;
-                margin-top: 15px;
+                margin-top: 0.9375rem;
                 //height: 100px;
              
                 display: flex;
@@ -862,7 +862,7 @@
             }
             &__phrase2{
                 width: 100%;
-                margin-top: 15px;
+                margin-top: 0.9375rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -870,15 +870,15 @@
             }
             &__link{
                 width: 100%;
-                height: 150px;
+                height: 9.375rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
         }
         &__image{
-            width: 200px;
-            height: 200px;
+            width: 12.5rem;
+            height: 12.5rem;
         }
         &__content{
             //flex: 0 0 50%; 
@@ -891,27 +891,27 @@
         }
         &__name{
             font-family: $fontFamilyVt323;
-            font-size: 50px;
+            font-size: 3.125rem;
             font-weight: 500;
             color: $colorGreen;
         }
         &__description{
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
         &__phrase1{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $colorGreen;
         }
         &__phrase2{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $colorBlue;
         }
         &__link{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             text-decoration: none;
             border: 1px solid $colorGreen;       
@@ -919,8 +919,8 @@
         &__textLink{
             background-color: $colorWhite;
             color: $colorGreen;
-            width: 100px;
-            height: 50px;
+            width: 6.25rem;
+            height: 3.125rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -936,17 +936,17 @@
     .toast-moods{
         &__title{
             font-family: $fontFamilyMonospace;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: $colorGreen;
         }
         &__text{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             text-transform: uppercase;   
         }
         &__ruleName{
             color: $colorBlue;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 500;
         }
         &__btn{
@@ -967,7 +967,7 @@
             }
         }
         &__img{
-            width: 120px;
+            width: 7.5rem;
         }
     }
     
