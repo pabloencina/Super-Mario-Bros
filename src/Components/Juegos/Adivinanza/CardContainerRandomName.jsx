@@ -8,7 +8,6 @@ const CardContainerRandomName = ({ charactersData }) => {
 
   return (
     <Container>
-      <Container></Container>
       <div className="game__container_title">
         <p className="game__title">
           HOLA AMIGUITO!!! ¿QUIERES JUGAR CONMIGO A UN JUEGO MUY DIVERTIDO?
