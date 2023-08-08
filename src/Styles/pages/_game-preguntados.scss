@@ -1,13 +1,13 @@
 .game-preguntados-card{
     &__container{
         &__general{
-            width: 490px;
-            height: 390px;
-            margin: 30px;
+            width: 30.625rem;
+            height: 24.375rem;
+            margin: 1.875rem;
         }
         &__card{
-            width: 500px;
-            margin-left: 10px;
+            width: 31.25rem;
+            margin-left: 0.625rem;
         }
         &__image{
             display: flex;
@@ -44,27 +44,27 @@
         }
         &__btn-next-previous{
             background-color: $colorWhite;
-            height: 55px;
-            border-radius: 5px;
-            margin-left: 65px;
+            height: 3.4375rem;
+            border-radius: 0.3125rem;
+            margin-left: 4.0625rem;
             display: flex;
             justify-content:center;
             align-items: center;
-            width: 500px;
+            width: 31.25rem;
         }
         &__buttons{
             display: flex;
             width: 50%;
-            height: 100px;
+            height: 6.25rem;
         }
         &__number-questions{
-            height: 80px;
+            height: 5rem;
             display: flex;
             justify-content:center;
             align-items: center;
         }
         &__btn_renew-game{
-            height: 30px;
+            height: 1.875rem;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -73,14 +73,14 @@
     &__number-questions{
         color: $colorWhite;
         font-family: $fontFamilyMonospace;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: bold;
     }
     &__column{
-        margin-left: -50px;
+        margin-left: -3.125rem;
     }
     &__image{
-        width: 150px;
+        width: 9.375rem;
     }
     &__title{
         text-transform: uppercase;
@@ -90,7 +90,7 @@
     &__text{
         text-transform: uppercase;
         font-family: $fontFamilyMonospace;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     
     &__btn{
@@ -105,12 +105,12 @@
             }
         }
         &__renew-game{
-            height: 35px;
+            height: 2.1875rem;
             background-color:$colorWhite ;
             color: $colorGreen;
             border: none;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 0.3125rem;
             &:hover{
                 background-color: $colorYellow;
                 color: $colorWhite;
@@ -118,7 +118,7 @@
         }
         &__next{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: bold;
             background-color: $colorWhite;
             border: none;
@@ -131,7 +131,7 @@
         }
         &__previous{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: bold;
             background-color: $colorWhite;
             border: none;
@@ -157,27 +157,27 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80px;
+            height: 5rem;
         }
         &__image{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 400px;
+            height: 25rem;
         }
     }
     &__text{
         color: $colorWhite;
         font-family: $fontFamilyMonospace;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: bold;
     }
     &__image{
-        width: 200px;
+        width: 12.5rem;
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 600px) {
+@media screen and (min-width: 21.875rem) and (max-width: 37.5rem) {
     .game-preguntados-card{
         &__container{
             &__general{
@@ -211,7 +211,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 25px;
+                height: 1.5625rem;
             }
             &__content{
                 display: flex;
@@ -230,7 +230,7 @@
             }
             &__btn-next-previous{
                 background-color:$colorBlue;
-                height: 70px;
+                height: 4.375rem;
                 border-radius: 5px;
                 width: 100%;
                 margin-left: 0; 
@@ -243,14 +243,14 @@
                 margin-right: 0;
             }
             &__number-questions{
-                height: 100px;
+                height: 6.25rem;
                 display: flex;
                 justify-content:center;
                 align-items:center ;
                 
             }
             &__btn_renew-game{
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
@@ -259,25 +259,25 @@
         &__number-questions{
             color: $colorWhite;
             font-family: $fontFamilyMonospace;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
         }
         &__column{
-            margin-left: -50px;
+            margin-left: -3.125rem;
         }
         &__image{
-            width: 100px;
+            width: 6.25rem;
         }
         &__title{
             text-transform: uppercase;
             font-family: $fontFamilyMonospace;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         &__text{
             text-transform: uppercase;
             font-family: $fontFamilyMonospace;
-            font-size: 12px;
+            font-size: 0.75rem;
         }
         
         &__btn{
@@ -292,12 +292,12 @@
                 }
             }
             &__renew-game{
-                height: 35px;
+                height: 2.1875rem;
                 background-color:$colorWhite ;
                 color: $colorGreen;
                 border: none;
                 text-decoration: none;
-                border-radius: 5px;
+                border-radius: 0.3125rem;
                 &:hover{
                     background-color: $colorYellow;
                     color: $colorWhite;
@@ -306,7 +306,7 @@
             &__next{
                 width: 90%;
                 font-family: $fontFamilyMonospace;
-                font-size: 10px;
+                font-size: 0.625rem;
                 font-weight: bold;
                 background-color: $colorWhite;
                 border: none;
@@ -320,7 +320,7 @@
             &__previous{
                 width: 90%;
                 font-family: $fontFamilyMonospace;
-                font-size: 10px;
+                font-size: 0.625rem;
                 font-weight: bold;
                 background-color: $colorWhite;
                 border: none;
@@ -346,28 +346,28 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 80px;
+                height: 5rem;
             }
             &__image{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100px;
+                height: 6.25rem;
             }
         }
         &__text{
             color: $colorWhite;
             font-family: $fontFamilyMonospace;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
         }
         &__image{
-            width: 80px;
+            width: 5rem;
         }
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 37.5rem) and (max-width: 62.5rem) {
     .game-preguntados-card{
         &__container{
             &__general{
@@ -400,7 +400,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 25px;
+                height: 1.5625rem;
             }
             &__content{
                 display: flex;
@@ -418,7 +418,7 @@
             }
             &__btn-next-previous{
                 background-color:$colorBlue;
-                height: 70px;
+                height: 4.375rem;
                 border-radius: 5px;
                 width: 100%;
                 margin-left: 0; 
@@ -431,14 +431,14 @@
                 margin-right: 0;
             }
             &__number-questions{
-                height: 100px;
+                height: 6.25rem;
                 display: flex;
                 justify-content:center;
                 align-items:center ;
                 
             }
             &__btn_renew-game{
-                height: 30px;
+                height: 1.875rem;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
@@ -447,25 +447,25 @@
         &__number-questions{
             color: $colorWhite;
             font-family: $fontFamilyMonospace;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
         }
         &__column{
-            margin-left: -50px;
+            margin-left: -3.125rem;
         }
         &__image{
-            width: 100px;
+            width: 6.25rem;
         }
         &__title{
             text-transform: uppercase;
             font-family: $fontFamilyMonospace;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         &__text{
             text-transform: uppercase;
             font-family: $fontFamilyMonospace;
-            font-size: 12px;
+            font-size: 0.75rem;
         }
         
         &__btn{
@@ -480,12 +480,12 @@
                 }
             }
             &__renew-game{
-                height: 35px;
+                height: 2.1875rem;
                 background-color:$colorWhite ;
                 color: $colorGreen;
                 border: none;
                 text-decoration: none;
-                border-radius: 5px;
+                border-radius: 0.3125rem;
                 &:hover{
                     background-color: $colorYellow;
                     color: $colorWhite;
@@ -494,7 +494,7 @@
             &__next{
                 width: 90%;
                 font-family: $fontFamilyMonospace;
-                font-size: 10px;
+                font-size: 0.625rem;
                 font-weight: bold;
                 background-color: $colorWhite;
                 border: none;
@@ -508,7 +508,7 @@
             &__previous{
                 width: 90%;
                 font-family: $fontFamilyMonospace;
-                font-size: 10px;
+                font-size: 0.625rem;
                 font-weight: bold;
                 background-color: $colorWhite;
                 border: none;
@@ -534,23 +534,23 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 80px;
+                height: 5rem;
             }
             &__image{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 350px;
+                height: 21.875rem;
             }
         }
         &__text{
             color: $colorWhite;
             font-family: $fontFamilyMonospace;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: bold;
         }
         &__image{
-            width: 150px;
+            width: 9.375rem;
         }
     }
 }

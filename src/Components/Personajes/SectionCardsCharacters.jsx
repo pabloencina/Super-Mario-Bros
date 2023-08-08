@@ -21,7 +21,13 @@ const SectionCardsCharacters = () => {
         <Row>
           {charactersData.map((character) => {
             return (
-              <Col style={{ marginTop: "20px" }} key={character.id} md={4}>
+              <Col
+                style={{ marginTop: "20px" }}
+                key={character.id}
+                md={4}
+                xs={6}
+                sm={6}
+              >
                 <CardCharacters key={character.id} character={character} />
               </Col>
             );

@@ -6,13 +6,13 @@
             align-items: center;
     }
     &__container_image{
-            width: 100px;
+            width: 6.25rem;
             display: flex;
             align-items: center;
             overflow: hidden;
     }
     &__image{
-            width: 100px;
+            width: 6.25rem;
             position: relative;
             left: 0;
             animation: slideAnimation 2s linear infinite;
@@ -25,7 +25,7 @@
     &__name{
         font-family: $fontFamilyVt323;
         color: $colorWhite;
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 }
 @keyframes slideAnimation {
@@ -33,7 +33,7 @@
     100% { left: calc(100% - 200px); } /* La imagen termina en la posición derecha */
   }
 
-  @media screen and (min-width: 350px) and (max-width: 700px) {
+  @media screen and (min-width: 21.875rem) and (max-width: 37.5rem) {
     footer{
         &__container_general{
                 background-color: $colorGreen;
@@ -42,12 +42,12 @@
                 align-items: center;
         }
         &__container_image{
-                width: 100px;
+                width: 6.25rem;
                 display: flex;
                 align-items: center;
         }
         &__image{
-                width: 100px;
+                width: 6.25rem;
         }
     }
 }

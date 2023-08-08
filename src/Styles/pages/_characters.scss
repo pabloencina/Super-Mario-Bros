@@ -1,12 +1,12 @@
 .charactersCard{
   
     &__container_card{
-        width: 350px;
+        width: 21.875rem;
         //margin-top: 30px;
         margin-bottom: 30px;
     }
     &__container_title{
-        height: 70px;
+        height: 4.375rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,13 +20,13 @@
         text-decoration: none;
         background-color: inherit;
         border: none;
-        height: 100px;
+        height: 6.25rem;
         width: 100%;
         
     }
     &__title{
         font-family: $fontFamilyVt323;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 500;
         color: $colorGreen;
         width: 100%;
@@ -38,7 +38,7 @@
          }
     }
     &__container_description{
-        height: 280px;
+        height: 17.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,25 +46,25 @@
     }
     &__description{
         font-family: $fontFamilyMonospace;
-        font-size: 16px;
+        font-size: 1rem;
     }
     &__container_image{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 300px;
+        height: 18.75rem;
         overflow: hidden;
         border-bottom: 1px solid $colorGreen;
     }
     &__image{
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
         position: relative;
         left: 0;
         animation: slideAnimation 3s linear infinite;
     }
     &__container_button{
-       height: 150px;
+       height: 9.375rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,9 +72,9 @@
     &__button_image{
         background-color: $colorYellow;
         border: none;
-        height: 50px;
+        height: 3.125rem;
         font-family: $fontFamilyMonospace;
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -87,17 +87,17 @@
     }
     &__container_text{
         width: 100%;
-        height: 200px;
+        height: 12.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     &__text{
         font-family: $fontFamilyVt323;
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: 500;
         color: $colorWhite;
-        margin: 50px;
+        margin: 3.125rem;
         text-transform: uppercase;
     }
 }
@@ -114,7 +114,7 @@
         justify-content: center;
     }
     &__image{
-        height: 500px;
+        height: 31.25rem;
     }
     &__content{
         flex: 0 0 40%; 
@@ -127,18 +127,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 6.25rem;
         background-color:  $colorGreen;
     }
     &__name{
         font-family: $fontFamilyVt323;
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: 500;
         color: $colorWhite;
     }
     &__container_description{
         width: 90%;
-        height: 300px;
+        height: 18.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -146,13 +146,13 @@
     }
     &__description{
         font-family: $fontFamilyMonospace;
-        font-size: 16px;
+        font-size: 1rem;
     }
     &__text{
         background-color: $colorWhite;
         color: $colorGreen;
-        width: 100px;
-        height: 50px;
+        width: 6.25rem;
+        height: 3.125rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -170,7 +170,7 @@
     }
     &__link{
         font-family: $fontFamilyVt323;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 500;
         text-decoration: none;
         border: 1px solid $colorGreen;
@@ -183,7 +183,7 @@
     }
     &__container_card{
         background-color: $colorBlue;
-        height: 900px;
+        height: 56.25rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -220,14 +220,14 @@
     animation: rotate 3s linear infinite; /* La animación se repite infinitamente */
   }
   
-  
-  @media screen and (min-width: 350px) and (max-width: 600px) {
+  // De 350px a 450px
+  @media screen and (min-width: 21.875rem) and (max-width: 28.125rem) {
     .charactersCard{
         &__container_card{
             width: 100%;
         }
         &__container_title{
-            height: 80px;
+            height: 5rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -239,7 +239,7 @@
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             color: $colorGreen;
             width: 75%;
@@ -248,27 +248,27 @@
             align-items: center;
         }
         &__container_description{
-            height: 280px;
+            height: 17.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         &__description{
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
         &__container_image{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 200px;
+            height: 12.5rem;
         }
         &__image{
-            width: 170px;
-            height: 170px;
+            width: 10.625rem;
+            height: 10.625rem;
         }
         &__container_button{
-            height: 100px;
+            height: 6.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -276,9 +276,9 @@
         &__button_image{
             background-color: $colorYellow;
             border: none;
-            height: 50px;
+            height: 3.125rem;
             font-family: monospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
     
@@ -298,10 +298,10 @@
         }
         &__text{
             font-family: $fontFamilyVt323;
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 500;
             color: $colorWhite;
-            margin: 50px;
+            margin: 3.125rem;
             text-transform: uppercase;
         }
     }
@@ -320,7 +320,7 @@
             align-items: center;
         }
         &__image{
-            height: 350px;
+            height: 21.875rem;
         }
         &__container_name{
             width: 100%;
@@ -331,7 +331,7 @@
         }
         &__name{
             font-family: $fontFamilyVt323;
-            font-size: 50px;
+            font-size: 3.125rem;
             font-weight: 500;
             color: $colorGreen;
         }
@@ -343,14 +343,14 @@
         }
         &__description{
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
+            font-size: 1rem;
             width: 90%;
         }
         &__text{
             background-color: $colorGreen ;
             color: $colorWhite;
-            width: 100px;
-            height: 50px;
+            width: 6.25rem;
+            height: 3.125rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -363,14 +363,14 @@
         }
         &__link_container{
             width: 100%;
-            height: 200px;
+            height: 12.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         &__link{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             text-decoration: none;
            
@@ -382,23 +382,23 @@
         }
         &__container_card{
             background-color: $colorBlue;
-            height: 900px;
+            height: 56.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
   }
-
-  @media screen and (min-width: 600px) and (max-width: 1000px) {
+  // De 450px a 750px
+  @media screen and (min-width: 28.125rem) and (max-width: 46.875rem) {
     .charactersCard{
   
         &__container_card{
-            width: 220px;
-            margin-bottom: 10px;
+            width: 100%;
+            margin-bottom: 0.625rem;
         }
         &__container_title{
-            height: 70px;
+            height: 4.375rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -412,13 +412,13 @@
             text-decoration: none;
             background-color: inherit;
             border: none;
-            height: 100px;
+            height: 6.25rem;
             width: 100%;
             
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             color: $colorGreen;
             width: 100%;
@@ -430,7 +430,7 @@
              }
         }
         &__container_description{
-            height: 280px;
+            height: 17.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -438,25 +438,25 @@
         }
         &__description{
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
         &__container_image{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 200px;
+            height: 12.5rem;
             overflow: hidden;
             border-bottom: 1px solid $colorGreen;
         }
         &__image{
-            width: 180px;
-            height: 180px;
+            width: 11.25rem;
+            height: 11.25rem;
             position: relative;
             left: 0;
             animation: slideAnimation 3s linear infinite;
         }
         &__container_button{
-           height: 150px;
+           height: 9.375rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -464,9 +464,9 @@
         &__button_image{
             background-color: $colorYellow;
             border: none;
-            height: 50px;
+            height: 3.125rem;
             font-family: monospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
     
@@ -474,13 +474,13 @@
         background-color:$colorBlue;
         &__container_image{
             width: 100%;
-            height: 200px;
+            height: 12.5rem;
             display: flex;
             justify-content: center;
         }
         &__container_text{
             width: 100%;
-            height: 300px;
+            height: 14rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -488,10 +488,10 @@
         }
         &__text{
             font-family: $fontFamilyVt323;
-            font-size: 40px;
+            font-size: 2rem;
             font-weight: 500;
             color: $colorWhite;
-            margin: 50px;
+            margin: 3.125rem;
             text-transform: uppercase;
         }
     }
@@ -508,7 +508,7 @@
             justify-content: center;
         }
         &__image{
-            height: 500px;
+            height: 31.25rem;
         }
         &__content{
             flex: 0 0 40%; 
@@ -521,18 +521,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100px;
+            height: 6.25rem;
             background-color:  $colorGreen;
         }
         &__name{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             color: $colorWhite;
         }
         &__container_description{
             width: 90%;
-            height: 300px;
+            height: 18.75rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -540,13 +540,13 @@
         }
         &__description{
             font-family: $fontFamilyMonospace;
-            font-size: 14px;
+            font-size: 0.6875rem;
         }
         &__text{
             background-color: $colorWhite;
             color: $colorGreen;
-            width: 100px;
-            height: 50px;
+            width: 6.25rem;
+            height: 3.125rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -564,7 +564,7 @@
         }
         &__link{
             font-family: $fontFamilyVt323;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 500;
             text-decoration: none;
             border: 1px solid $colorGreen;
@@ -577,7 +577,233 @@
         }
         &__container_card{
             background-color: $colorBlue;
-            height: 900px;
+            height: 56.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @keyframes slideAnimation {
+        0% { left: 0; } /* La imagen empieza en la posición izquierda */
+        100% { left: calc(100% - 300px); } /* La imagen termina en la posición derecha */
+      }
+    @keyframes slideInRight {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      .image-animation {
+        animation: slideInRight 1s ease;
+      }
+      
+    
+      @keyframes rotate {
+        from {
+          transform: rotate(1deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .charactersCard__button_image {
+        animation: rotate 3s linear infinite; /* La animación se repite infinitamente */
+      }
+      
+  }
+// De 750px a 1000px
+  @media screen and (min-width: 46.875rem) and (max-width: 62.5rem) {
+    .charactersCard{
+  
+        &__container_card{
+            width: 13.75rem;
+            margin-bottom: 0.625rem;
+        }
+        &__container_title{
+            height: 4.375rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $colorGreen;
+            &:hover{
+                background-color: $colorGreen;
+                color: $colorWhite;
+             }
+        }
+        &__btn_name{
+            text-decoration: none;
+            background-color: inherit;
+            border: none;
+            height: 6.25rem;
+            width: 100%;
+            
+        }
+        &__title{
+            font-family: $fontFamilyVt323;
+            font-size: 1.875rem;
+            font-weight: 500;
+            color: $colorGreen;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                color: $colorWhite;
+             }
+        }
+        &__container_description{
+            height: 17.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        &__description{
+            font-family: $fontFamilyMonospace;
+            font-size: 1rem;
+        }
+        &__container_image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 12.5rem;
+            overflow: hidden;
+            border-bottom: 1px solid $colorGreen;
+        }
+        &__image{
+            width: 11.25rem;
+            height: 11.25rem;
+            position: relative;
+            left: 0;
+            animation: slideAnimation 3s linear infinite;
+        }
+        &__container_button{
+           height: 9.375rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__button_image{
+            background-color: $colorYellow;
+            border: none;
+            height: 3.125rem;
+            font-family: monospace;
+            font-size: 1rem;
+        }
+    }
+    
+    .presentation{
+        background-color:$colorBlue;
+        &__container_image{
+            width: 100%;
+            height: 12.5rem;
+            display: flex;
+            justify-content: center;
+        }
+        &__container_text{
+            width: 100%;
+            height: 18.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        &__text{
+            font-family: $fontFamilyVt323;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: $colorWhite;
+            margin: 3.125rem;
+            text-transform: uppercase;
+        }
+    }
+    
+    .detailCardById{
+        &__container{
+            display: flex;
+            height: auto;
+            width: 100%;
+        }
+        &__container_image{
+            flex: 0 0 60%;   
+            display: flex;
+            justify-content: center;
+        }
+        &__image{
+            height: 31.25rem;
+        }
+        &__content{
+            flex: 0 0 40%; 
+            display: flex;
+            flex-direction: column;
+            
+        }
+        &__container_name{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6.25rem;
+            background-color:  $colorGreen;
+        }
+        &__name{
+            font-family: $fontFamilyVt323;
+            font-size: 1.875rem;
+            font-weight: 500;
+            color: $colorWhite;
+        }
+        &__container_description{
+            width: 90%;
+            height: 18.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        &__description{
+            font-family: $fontFamilyMonospace;
+            font-size: 0.875rem;
+        }
+        &__text{
+            background-color: $colorWhite;
+            color: $colorGreen;
+            width: 6.25rem;
+            height: 3.125rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            text-transform: uppercase;
+                &:hover{
+                    background-color: $colorGreen;
+                    color: $colorWhite;
+            }
+        }
+        &__link_container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__link{
+            font-family: $fontFamilyVt323;
+            font-size: 1.875rem;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid $colorGreen;
+           
+        }
+        &__button{
+            background-color: $colorGreen;
+            border: none;
+            text-transform: uppercase;
+        }
+        &__container_card{
+            background-color: $colorBlue;
+            height: 56.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
