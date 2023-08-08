@@ -176,8 +176,8 @@
         width: 12.5rem;
     }
 }
-
-@media screen and (min-width: 21.875rem) and (max-width: 37.5rem) {
+ // De 350px a 450px
+@media screen and (min-width: 21.875rem) and (max-width: 28.125rem) {
     .game-preguntados-card{
         &__container{
             &__general{
@@ -366,8 +366,201 @@
         }
     }
 }
+  // De 450px a 750px
+@media screen and (min-width: 28.125rem) and (max-width: 46.875rem) {
+    .game-preguntados-card{
+        &__container{
+            &__general{
+                width: 100%;
+                height: auto;
+                margin-left: 0; /* Esto elimina el margen izquierdo si es necesario */
+                margin-right: 0;
+            }
+            &__card{
+                width: 100%;
+                margin-left: 0; /* Esto elimina el margen izquierdo si es necesario */
+                margin-right: 0;
+            }
+            &__image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 1.5625rem;
+            }
+            &__content{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-left: 0; 
+                margin-right: 0;
+            }
+            &__btn-changeCard1{
+                width: 100%;
+           
+            }
+            &__btn-changeCard2{
+                width: 100%
+            }
+            &__btn-next-previous{
+                background-color:$colorBlue;
+                height: 4.375rem;
+                border-radius: 5px;
+                width: 100%;
+                margin-left: 0; 
+                margin-right: 0;
+            }
+            &__buttons{
+                display: flex;
+               width: 100%;
+                margin-left: 0; 
+                margin-right: 0;
+            }
+            &__number-questions{
+                height: 6.25rem;
+                display: flex;
+                justify-content:center;
+                align-items:center ;
+                
+            }
+            &__btn_renew-game{
+                height: 1.875rem;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            &__btn_reload{
+                display: flex;
+                justify-content:center;
+                align-items:center ;
+            }
+        }
+        &__number-questions{
+            color: $colorWhite;
+            font-family: $fontFamilyMonospace;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+        &__column{
+            margin-left: -3.125rem;
+        }
+        &__image{
+            width: 6.25rem;
+        }
+        &__title{
+            text-transform: uppercase;
+            font-family: $fontFamilyMonospace;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
+        &__text{
+            text-transform: uppercase;
+            font-family: $fontFamilyMonospace;
+            font-size: 0.75rem;
+        }
+        
+        &__btn{
+            &__answer{
+                background-color: $colorYellow;
+                border: none;
+                color: black;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: black;
+                    color: $colorYellow;
+                }
+            }
+            &__renew-game{
+                height: 2.1875rem;
+                background-color:$colorWhite ;
+                color: $colorGreen;
+                border: none;
+                text-decoration: none;
+                border-radius: 0.3125rem;
+                &:hover{
+                    background-color: $colorYellow;
+                    color: $colorWhite;
+                 }
+            }
+            &__next{
+                width: 90%;
+                font-family: $fontFamilyMonospace;
+                font-size: 0.625rem;
+                font-weight: bold;
+                background-color: $colorWhite;
+                border: none;
+                color: $colorBlue;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: $colorWhite;
+                    color: black;
+                }
+            }
+            &__previous{
+                width: 90%;
+                font-family: $fontFamilyMonospace;
+                font-size: 0.625rem;
+                font-weight: bold;
+                background-color: $colorWhite;
+                border: none;
+                color: $colorBlue;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: $colorWhite;
+                    color: black;
+                }
+            }
+        }
+        
+    }
+    .section-result-questions{
+        &__container{
+            &__result{
+                flex-direction:column;
+                width: 100%;
 
-@media screen and (min-width: 37.5rem) and (max-width: 62.5rem) {
+            }
+            &__text{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 5rem;
+            }
+            &__image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3rem;
+            }
+        }
+        &__text{
+            color: $colorWhite;
+            font-family: $fontFamilyMonospace;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+        &__image{
+            width: 2rem;
+        }
+    }
+}
+// De 750px a 1000px
+@media screen and (min-width: 46.875rem) and (max-width: 62.5rem) {
     .game-preguntados-card{
         &__container{
             &__general{

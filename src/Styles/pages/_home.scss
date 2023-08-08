@@ -30,11 +30,11 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 200px;
+        height: 12.5rem;
     }
     &__title{
         font-family: $fontFamilyVt323;
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 500;
         color: $colorWhite;
     }
@@ -45,10 +45,10 @@
         justify-content: center;
         align-items: center;
         border: 5px solid $colorSkyBlue;
-        border-radius: 130px 50px ;
+        border-radius: 8.125rem 3.125rem ;
         box-shadow: 0 0 10px 5px $colorSkyBlue;
         margin-top: 50px;
-        height: 200px;
+        height: 12.5rem;
         text-transform: uppercase;
     }
     
@@ -58,7 +58,7 @@
         text-align: justify;
         word-break: break-word;
         font-family: monospace;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     &__span_azul{
         color: $colorBlue;
@@ -73,10 +73,10 @@
         font-weight: 700;
     }
     &__image_signo_pregunta{
-        width: 40px;
+        width: 2.5rem;
     }
     &__container_button{
-        height: 200px;
+        height: 12.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -84,15 +84,15 @@
     &__button{
         background-color: $colorYellow;
         border: none;
-        height: 50px;
+        height: 3.125rem;
         font-family: $fontFamilyMonospace;
-        font-size: 20px;
+        font-size: 1.25rem;
         text-transform: uppercase;
     }
     
     &__text_pregunta{
         font-family: $fontFamilyMonospace;
-        font-size: 20px;
+        font-size: 1.25rem;
         color: $colorWhite;
         text-transform: uppercase;
     }
@@ -139,8 +139,8 @@
         text-transform: uppercase;
     }
   }
-
-  @media screen and (min-width: 350px) and (max-width: 600px) {
+// De 350px a 450px
+  @media screen and (min-width: 21.875rem) and (max-width: 28.125rem) {
     .home{
         background-color: $colorBlue;
         transition: margin-top 0.3s ease;
@@ -149,11 +149,11 @@
         }
         &__container_image{
             width: 100%;
-            height: 300px;
+            height: 18.75rem;
         }
         &__container_dialog{
             width: 100%;
-            margin-top: 130px;
+            margin-top: 8.125rem;
         }
         &__container_image_text{
             display:flex;
@@ -162,28 +162,28 @@
         }
         &__text_pregunta{
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
-            margin-left: 25px;
+            font-size: 1rem;
+            margin-left: 1.5625rem;
         }
         &__container_image_sonic{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 200px;
+            height: 12.5rem;
         }
         &__image{
-            width: 130px;
-            height: 130px;
+            width: 8.125rem;
+            height: 8.125rem;
         }
         &__container_title{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80px;
+            height: 5rem;
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 26px;
+            font-size: 1.625rem;
             font-weight: 400;
             color: $colorWhite;
         }
@@ -195,7 +195,7 @@
             justify-content: center;
             align-items: center;
             border: 5px solid $colorSkyBlue;
-            border-radius: 100px 50px ;
+            border-radius: 6.25rem 3.125rem ;
             box-shadow: 0 0 10px 5px $colorSkyBlue;
         }
         &__text{
@@ -203,7 +203,7 @@
             width: 100%;
             text-align: justify;
             font-family: $fontFamilyMonospace;
-            font-size: 16px;
+            font-size: 1rem;
         }
         &__span_azul{
             color: $colorBlue;
@@ -218,11 +218,11 @@
             font-weight: 700;
         }
         &__image_signo_pregunta{
-            width: 30px;
+            width: 1.875rem;
         }
         &__container_button{
             width: 100%;
-            height: 100px;
+            height: 6.25rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -230,9 +230,9 @@
         &__button{
             background-color: $colorYellow;
             border: none;
-            height: 50px;
+            height: 3.125rem;
             font-family: $fontFamilyMonospace;
-            font-size: 20px;
+            font-size: 1.25rem;
         }   
     }
     .carousel{
@@ -248,13 +248,13 @@
         }
         &__image{
             width: 100%;
-            height: 150px;
+            height: 9.375rem;
             display: flex;
             justify-content: center;
         }
         &__container_title{
             width: 100%;
-            height: 200px;
+            height: 12.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -262,14 +262,160 @@
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 40px;
+            font-size: 2.5rem;
             font-weight: 500;
             color: $colorWhite;
         }
       }
 }
+  // De 450px a 750px
+@media screen and (min-width: 28.125rem) and (max-width: 46.875rem) {
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .home{
+        background-color: $colorBlue;
+    
+        &__container_universal{
+            display: flex;
+            justify-content: center;
+    }
+        &__container_image{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__container{
+            width: 100%;
+        }
+        &__image{
+            width: 100%;
+            height: auto; 
+        }
+        &__container_dialog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    
+        &__container_title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 11.25rem;
+        }
+        &__title{
+            font-family: $fontFamilyVt323;
+            font-size: 3.125rem;
+            font-weight: 500;
+            color: $colorWhite;
+        }
+        &__container_text{
+            background-color: $colorWhite;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid $colorSkyBlue;
+            border-radius: 8.125rem 3.125rem ;
+            box-shadow: 0 0 10px 5px $colorSkyBlue;
+            margin-top: 50px;
+            height: 12.5rem;
+            text-transform: uppercase;
+        }
+        
+        &__text{
+            color: $colorBlack;
+            width: 85%;
+            text-align: justify;
+            word-break: break-word;
+            font-family: monospace;
+            font-size: 0.75rem;
+        }
+        &__span_azul{
+            color: $colorBlue;
+            font-weight: 700;
+        }
+        &__span_amarillo{
+            color: $colorYellow;
+            font-weight: 700;
+        }
+        &__span_rojo{
+            color: $colorRed;
+            font-weight: 700;
+        }
+        &__image_signo_pregunta{
+            width: 2.5rem;
+        }
+        &__container_button{
+            height: 12.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__button{
+            background-color: $colorYellow;
+            border: none;
+            height: 50px;
+            font-family: $fontFamilyMonospace;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        
+        &__text_pregunta{
+            font-family: $fontFamilyMonospace;
+            font-size: 0.875rem;
+            color: $colorWhite;
+            text-transform: uppercase;
+        }
+    }
+    
+    @keyframes slideInRight {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      .home__title{
+        animation: slideInRight 1s ease;
+      }
+.carousel{
+        &__container{
+            height: 37.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -100px;
+        }
+        &__image{
+            width: 100%;
+            height: 18.75rem;
+            display: flex;
+            justify-content: center;
+        }
+        &__container_title{
+            width: 100%;
+            height: 18.75rem;
+            display: flex;
+            justify-content: center;
+            align-items:flex-end;
+           
+        }
+        &__title{
+            font-family: $fontFamilyVt323;
+            font-size: 3.125rem;
+            font-weight: 500;
+            color: $colorWhite;
+            text-transform: uppercase;
+        }
+      }
+}
+// De 750px a 1000px
+@media screen and (min-width: 46.875rem) and (max-width: 62.5rem) {
 
     .home{
         background-color: $colorBlue;
@@ -303,11 +449,11 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 200px;
+            height: 12.5rem;
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 80px;
+            font-size: 5rem;
             font-weight: 500;
             color: $colorWhite;
         }
@@ -318,10 +464,10 @@
             justify-content: center;
             align-items: center;
             border: 5px solid $colorSkyBlue;
-            border-radius: 130px 50px ;
+            border-radius: 8.125rem 3.125rem ;
             box-shadow: 0 0 10px 5px $colorSkyBlue;
             margin-top: 50px;
-            height: 200px;
+            height: 12.5rem;
             text-transform: uppercase;
         }
         
@@ -331,7 +477,7 @@
             text-align: justify;
             word-break: break-word;
             font-family: monospace;
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         &__span_azul{
             color: $colorBlue;
@@ -346,10 +492,10 @@
             font-weight: 700;
         }
         &__image_signo_pregunta{
-            width: 40px;
+            width: 2.5rem;
         }
         &__container_button{
-            height: 200px;
+            height: 12.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -357,15 +503,15 @@
         &__button{
             background-color: $colorYellow;
             border: none;
-            height: 50px;
+            height: 3.125rem;
             font-family: $fontFamilyMonospace;
-            font-size: 20px;
+            font-size: 1.25rem;
             text-transform: uppercase;
         }
         
         &__text_pregunta{
             font-family: $fontFamilyMonospace;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: $colorWhite;
             text-transform: uppercase;
         }
@@ -385,21 +531,21 @@
       }
 .carousel{
         &__container{
-            height: 600px;
+            height: 37.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: -100px;
+            margin-top: -6.25rem;
         }
         &__image{
             width: 100%;
-            height: 300px;
+            height: 18.75rem;
             display: flex;
             justify-content: center;
         }
         &__container_title{
             width: 100%;
-            height: 300px;
+            height: 18.75rem;
             display: flex;
             justify-content: center;
             align-items:flex-end;
@@ -407,7 +553,7 @@
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 60px;
+            font-size: 3.75rem;
             font-weight: 500;
             color: $colorWhite;
             text-transform: uppercase;

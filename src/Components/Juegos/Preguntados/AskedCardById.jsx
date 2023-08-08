@@ -50,7 +50,7 @@ const AskedCardById = ({ askedData }) => {
               askedData={askedData.length}
               countAnswerCorrect={countAnswerCorrect}
             />
-            <div className="home__container_button">
+            <div className="game-preguntados-card__container_btn_reload">
               <Link to="/juegos/preguntados" className="game__btn-game">
                 <Button
                   onClick={() => window.location.reload()}
