@@ -43,6 +43,29 @@ const AskedCardById = ({ askedData }) => {
 
   return (
     <Container style={{ flexDirection: "column" }}>
+      <Container className="game-preguntados-card__container__presentation">
+        <p className="game-preguntados-card__presentation">
+          HOLA AMIGUITO TE PRESENTO MI ULTIMO JUEGO,
+        </p>
+        <p className="game-preguntados-card__presentation">
+          ¿ME AYUDAS A RESPONDER LAS PREGUNTAS?
+        </p>
+        <p className="game-preguntados-card__presentation">
+          NECESITO QUE NOS CONCENTREMOS MUCHO Y SI ES NECESARIO USA PAPEL Y
+          LÁPIZ.
+        </p>
+        <p className="game-preguntados-card__presentation">
+          OBSERVO QUE ERES MUY INTELIGENTE Y TIENE UN GRAN POTENCIAL PARA
+          RESPONDER LAS SIGUIENTES PREGUNTAS,
+        </p>
+        <p className="game-preguntados-card__presentation">
+          SIN TU AYUDA NO LO PODRÉ LOGRAR, NECESITO QUE TRABAJEMOS EN EQUIPO.
+        </p>
+        <p className="game-preguntados-card__presentation">
+          {" "}
+          A JUGAR Y DIVERTIRNOS MUCHO!!!{" "}
+        </p>
+      </Container>
       <Container>
         {activeCardIndex === askedData.length - 1 && (
           <Container>

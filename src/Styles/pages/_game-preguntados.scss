@@ -5,6 +5,13 @@
             height: 24.375rem;
             margin: 1.875rem;
         }
+        &__presentation{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 250px;
+        }
         &__card{
             width: 31.25rem;
             margin-left: 0.625rem;
@@ -69,6 +76,12 @@
             justify-content: center;
             align-items: flex-end;
         }
+    }
+    &__presentation{
+        font-family: $fontFamilyMonospace;
+        color: $colorWhite;
+        font-weight: bold;
+        font-size: 1rem;
     }
     &__number-questions{
         color: $colorWhite;
@@ -186,6 +199,13 @@
                 margin-left: 0; /* Esto elimina el margen izquierdo si es necesario */
                 margin-right: 0;
             }
+            &__presentation{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 250px;
+            }
             &__card{
                 width: 100%;
                 //margin-left: 10px;
@@ -255,6 +275,12 @@
                 justify-content: center;
                 align-items: flex-end;
             }
+        }
+        &__presentation{
+            font-family: $fontFamilyMonospace;
+            color: $colorWhite;
+            font-weight: bold;
+            font-size: 13px;
         }
         &__number-questions{
             color: $colorWhite;
@@ -376,6 +402,13 @@
                 margin-left: 0; /* Esto elimina el margen izquierdo si es necesario */
                 margin-right: 0;
             }
+            &__presentation{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 250px;
+            }
             &__card{
                 width: 100%;
                 margin-left: 0; /* Esto elimina el margen izquierdo si es necesario */
@@ -448,6 +481,12 @@
                 justify-content:center;
                 align-items:center ;
             }
+        }
+        &__presentation{
+            font-family: $fontFamilyMonospace;
+            color: $colorWhite;
+            font-weight: bold;
+            font-size: 15px;
         }
         &__number-questions{
             color: $colorWhite;
@@ -569,6 +608,13 @@
                 margin-left: 0; /* Esto elimina el margen izquierdo si es necesario */
                 margin-right: 0;
             }
+            &__presentation{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 250px;
+            }
             &__card{
                 width: 100%;
                 margin-left: 0; /* Esto elimina el margen izquierdo si es necesario */
@@ -636,6 +682,12 @@
                 justify-content: center;
                 align-items: flex-end;
             }
+        }
+        &__presentation{
+            font-family: $fontFamilyMonospace;
+            color: $colorWhite;
+            font-weight: bold;
+            font-size: 0.9375rem;
         }
         &__number-questions{
             color: $colorWhite;
