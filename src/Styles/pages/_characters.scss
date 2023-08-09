@@ -239,10 +239,10 @@
         }
         &__title{
             font-family: $fontFamilyVt323;
-            font-size: 1.875rem;
+            font-size: 1.375rem;
             font-weight: 500;
             color: $colorGreen;
-            width: 75%;
+            width: 90%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -261,11 +261,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 12.5rem;
+            height: 9.5rem;
         }
         &__image{
-            width: 10.625rem;
-            height: 10.625rem;
+            width: 9rem;
+            height: 9rem;
         }
         &__container_button{
             height: 6.25rem;
