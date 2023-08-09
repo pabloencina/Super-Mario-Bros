@@ -109,7 +109,9 @@ const Home = () => {
       </div>
       <Container>
         <div className="carousel__container_title">
-          <p className="carousel__title">Fotos para compartir con mis amigos</p>
+          <p className="carousel__title">
+            Fotos para compartir con mis amigos!!!
+          </p>
         </div>
         <CarouselComponent />
       </Container>
