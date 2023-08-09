@@ -27,14 +27,26 @@
         color: $colorWhite;
         font-size: 3.75rem;
     }
+    &__container_copyright{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    &__copyright{
+        font-family: $fontFamilyMonospace;
+        color: $colorWhite;
+        font-size: 1rem;
+        text-transform:uppercase;
+    }
 }
 @keyframes slideAnimation {
     0% { left: 0; } /* La imagen empieza en la posición izquierda */
     100% { left: calc(100% - 200px); } /* La imagen termina en la posición derecha */
   }
 
-  @media screen and (min-width: 21.875rem) and (max-width: 37.5rem) {
-    footer{
+   // De 350px a 450px
+  @media screen and (min-width: 21.875rem) and (max-width:28.125rem) {
+    .footer{
         &__container_general{
                 background-color: $colorGreen;
                 display: flex;
@@ -49,5 +61,90 @@
         &__image{
                 width: 6.25rem;
         }
+        &_container__name{
+            background-color: red;
+            width: 50%;
+        }
+        &__name{
+                font-size: 0.875rem;
+        }
+        &__container__copyright{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                background-color: aqua;
+            }
+            &__copyright{
+                font-family: $fontFamilyMonospace;
+                color: $colorWhite;
+                font-size: 0.5rem;
+                text-transform:uppercase;
+            }
+    }
+}
+// De 450px a 750px
+@media screen and (min-width: 28.125rem) and (max-width:46.875rem) {
+    .footer{
+        &__container_general{
+                background-color: $colorGreen;
+                display: flex;
+                justify-content:flex-end;
+                align-items: center;
+        }
+        &__container_image{
+                width: 6.25rem;
+                display: flex;
+                align-items: center;
+        }
+        &__image{
+                width: 6.25rem;
+        }
+        &__name{
+                font-size: 0.75rem;
+        }
+        &__container__copyright{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            &__copyright{
+                font-family: $fontFamilyMonospace;
+                color: $colorWhite;
+                font-size: 0.5rem;
+                text-transform:uppercase;
+            }
+    }
+}
+// De 750px a 1000px
+@media screen and (min-width: 46.875rem) and (max-width: 62.5rem) {
+    .footer{
+        &__container_general{
+                background-color: $colorGreen;
+                display: flex;
+                justify-content:flex-end;
+                align-items: center;
+        }
+        &__container_image{
+                width: 6.25rem;
+                display: flex;
+                align-items: center;
+        }
+        &__image{
+                width: 6.25rem;
+        }
+        &__name{
+                font-size: 0.875rem;
+        }
+        &__container__copyright{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            &__copyright{
+                font-family: $fontFamilyMonospace;
+                color: $colorWhite;
+                font-size: 0.625rem;
+                text-transform:uppercase;
+            }
     }
 }
