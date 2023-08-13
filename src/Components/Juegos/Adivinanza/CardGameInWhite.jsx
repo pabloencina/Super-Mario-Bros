@@ -51,13 +51,17 @@ const CardGameInWhite = ({
               <p className="game__message-point">{points} PUNTOS</p>
               <div className="game__container_btn-game">
                 {/* <Button className="game__btn-game"> */}
-                <Link to="/juegos" className="game__btn-game">
-                  <Button
+                <Link
+                  onClick={() => window.location.reload()}
+                  to="/juegos/adivinanza"
+                  className="game__btn-game"
+                >
+                  {/* <Button
                     onClick={() => window.location.reload()}
                     className="game__btn-game"
-                  >
-                    ¿SEGUIR JUGANDO?
-                  </Button>
+                  > */}
+                  ¿SEGUIR JUGANDO?
+                  {/* </Button> */}
                 </Link>
                 {/* </Button> */}
               </div>

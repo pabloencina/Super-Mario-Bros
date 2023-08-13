@@ -25,6 +25,7 @@ const VideoCard = ({ video }) => {
           url={video.id_video}
           width={videoWidth}
           height="auto"
+          key={video.id_video}
         >
           {video.id_video}
         </ReactPlayer>

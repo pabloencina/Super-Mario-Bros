@@ -14,7 +14,7 @@ const VideoById = () => {
       <Row>
         {videosData.map((video) => {
           return (
-            <Col md={6} sx={12} style={{ marginBottom: "25px" }}>
+            <Col key={video.id} md={6} sx={12} style={{ marginBottom: "25px" }}>
               {/* <CardCharacters key={character.id} character={character} /> */}
               <VideoCard key={video.id_video} video={video} />
             </Col>

@@ -39,7 +39,7 @@ function NavbarComponent() {
                 JUEGOS
               </Nav.Link> */}
               <NavDropdown
-                eventKey={2}
+                //eventKey={2}
                 title="JUEGOS"
                 //id="basic-nav-dropdown"
                 href="/juegos/"
